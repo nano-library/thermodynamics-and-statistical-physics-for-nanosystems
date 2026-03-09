@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Heat Engine, Refrigerator & Heat Pump, Carnot Cycle · Thermodynamics and Statistical Physics For Nanosystems · Nano Library</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://nano-library.github.io/web-styling/topic.css">
+    <link rel="icon" type="image/x-icon" href="https://nano-library.github.io/web-styling/favicon.png">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+    <script src="../progress.js"></script>
+</head>
+<body>
+    <a class="nav-button nav-prev" href="laws-of-thermodynamics.html"  title="Prev: Laws of Thermodynamics">
+        <span class="button-icon"><</span>
+        <span class="button-label">prev</span>
+    </a>
+
+    <a class="nav-button nav-list" href="../index.html" title="Back to contents">
+        <span class="button-label">contents</span>
+    </a>
+
+    <a class="nav-button nav-next is-last" href="#" onclick="return false;" title="Last Page">
+        <span class="button-icon">></span>
+        <span class="button-label">next</span>
+    </a>
+
+    <main data-topic="3" data-list="../index.html">
+
+        <div class="page-header">
+            <div class="topic-chip">Chapter 1 \(\cdot\) Thermodynamics</div>
+            <h1>Heat Engine, Refrigerator & Heat Pump, Carnot Cycle</h1>
+            <p class="page-meta">Applications of the Second Law of Thermodynamics</p>
+            <div class="progress-bar-wrap">
+                <div class="progress-label">
+                    <span class="topic-count">loading…</span>
+                    <span class="pct-count"></span>
+                </div>
+                <div class="progress-track">
+                <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider">
+            <span class="divider-line"></span>
+            <span class="divider-flower">✦</span>
+            <span class="divider-flower">❀</span>
+            <span class="divider-flower">✦</span>
+            <span class="divider-line"></span>
+        </div>
+
+        <div class="content-body">
+
+            <div class="intro-card">
+                ✨ We shift our focus to the practical applications of thermodynamics, 
+                exploring how energy is transferred and converted in real-world devices 
+                such as heat engines, refrigerators, and heat pumps, 
+                all grounded in the idealized Carnot cycle.
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number pink">3.1</div>
+                <h2>Heat Engine</h2>
+            </div>
+
+            <div class="callout def">
+                <span class="callout-icon">🌸</span>
+                <div>
+                <div class="callout-title">Definition</div>
+                    A heat engine is a device that extracts heat from a high-temperature reservoir, 
+                    converts part of it into mechanical work, 
+                    and rejects the remaining heat to a low-temperature reservoir. 
+                    <br>
+                    <strong>Examples</strong>: Steam engines (trains), internal combustion engines (cars), external combustion engines, gas turbines.
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number pink">3.2</div>
+                <h2>Working Principle of Heat Engine (Cyclic Process)</h2>
+            </div>
+
+            <p>
+                A working substance (for example, water in a steam engine) undergoes a cyclic process:
+            </p>
+
+            <p>
+                Liquid \(\rightarrow\) Vapour \(\rightarrow\) Expansion (drives turbine) \(\rightarrow\) Condensation \(\rightarrow\) Back to liquid.
+            </p>
+
+            <p>
+                Since the process is cyclic, the system returns to its initial state.
+                Therefore, internal energy change over one complete cycle is:
+            </p>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.1)</div>
+                <div class="formula">
+                    <span class="op">\(\Delta\)</span>
+                    <span class="var">U</span><sub>cycle</sub>
+                    <span class="op">=</span>
+                    <span class="var">0</span>
+                </div>
+            </div>
+
+            <p>
+                From the First Law of Thermodynamics:
+            </p>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.2)</div>
+                <div class="formula">
+                    <span class="op">\(\Delta\)</span>
+                    <span class="var">U</span>
+                    <span class="op">=</span>
+                    <span class="var">Q</span>
+                    <span class="op">-</span>
+                    <span class="var">W</span>
+                </div>
+            </div>
+
+            <p>
+                Substituting Equation (3.1), we get
+            </p>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.3)</div>
+                <div class="formula">
+                    <span class="var">0</span>
+                    <span class="op">=</span>
+                    <span class="var">Q</span><sub>net</sub>
+                    <span class="op">-</span>
+                    <span class="var">W</span><sub>net</sub>
+                </div>
+            </div>
+
+            <p>
+                For a complete cycle:
+            </p>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.4)</div>
+                <div class="formula">               
+                    <span class="var">W</span><sub>net</sub>
+                    <span class="op">=</span>
+                    <span class="var">Q</span><sub>net</sub>
+                </div>
+            </div>
+
+            <p>
+                If the engine absorbs heat \(Q_h\) from the hot reservoir
+                and rejects heat \(Q_c\) to the cold reservoir, then
+            </p>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.5)</div>
+                <div class="formula">               
+                    <span class="var">Q</span><sub>net</sub>
+                    <span class="op">=</span>
+                    <span class="var">Q</span><sub>h</sub>
+                    <span class="op">-</span>
+                    <span class="var">Q</span><sub>c</sub>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.6)</div>
+                <div class="formula">               
+                    <span class="var">W</span>
+                    <span class="op">=</span>
+                    <span class="var">Q</span><sub>h</sub>
+                    <span class="op">-</span>
+                    <span class="var">Q</span><sub>c</sub>
+                </div>
+            </div>  
+
+            <div class="section-head">
+                <div class="section-head-number pink">3.3</div>
+                <h2>Efficiency of a Heat Engine</h2>
+            </div>
+
+            <p>
+                Thermal efficiency is defined as the ratio of useful work output
+                to heat absorbed from the hot reservoir:
+            </p>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.7)</div>
+                <div class="formula">
+                    <span class="var">e</span>
+                    <span class="op">=</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">W</span></span>
+                        <span class="frac-den"><span class="var">Q</span><sub>h</sub></span>
+                    </span>
+                </div>
+            </div>
+
+            <p>
+                Substituting Equation (3.6),
+            </p>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.8)</div>
+                <div class="formula">
+                    <span class="var">e</span>
+                    <span class="op">=</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">Q</span><sub>h</sub> - <span class="var">Q</span><sub>c</sub></span>
+                        <span class="frac-den"><span class="var">Q</span><sub>h</sub></span>
+                    </span>
+                </div>
+            </div>
+
+            <p>
+                Simplifing the Equation (3.8), we get the thermal efficiency equation
+            </p>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.9)</div>
+                <div class="formula">
+                    <span class="var">e</span>
+                    <span class="op">=</span>
+                    <span class="var">1</span>
+                    <span class="op">-</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">Q</span><sub>c</sub></span>
+                        <span class="frac-den"><span class="var">Q</span><sub>h</sub></span>
+                    </span>
+                </div>
+            </div>
+       
+            <div class="section-head">
+                <div class="section-head-number pink">3.4</div>
+                <h2>Important Observations</h2>
+            </div>
+            
+            <div class="callout warn">
+                <div>
+                    <div class="callout-title">Impossible Case</div>
+                    If \(Q_c = 0\), then \(e = 1\), meaning 100% efficiency, which is impossible by the Second Law.
+                </div>
+            </div>
+
+            <div class="callout note">
+                <div>
+                    <div class="callout-title">Always Less Than 1</div>
+                    Since \(Q_c > 0\) always, efficiency is always less than 1, i.e., \(e < 1\).
+                </div>
+            </div>
+
+            <div class="callout tip">
+                <div>
+                    <div class="callout-title">Improving Efficiency</div>
+                    Efficiency increases if \(Q_h\) increases or \(Q_c\) decreases.
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number blue">3.5</div>
+                <h2>Refrigerator</h2>
+            </div>
+
+            <div class="callout def">
+                <span class="callout-icon">🌸</span>
+                <div>
+                <div class="callout-title">Definition</div>
+                    A refrigerator removes heat from a cold reservoir and rejects it to a hot reservoir by using external work.
+                    The heat removed from the cold reservoir is \(Q_c\).
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number blue">3.6</div>
+                <h2>Coefficient of Performance (COP) of Refrigerator</h2>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.10)</div>
+                <div class="formula">
+                    <span class="var">k</span><sub>R</sub>
+                    <span class="op">=</span>
+                    <span class="frac">
+                    <span class="frac-num"><span class="var">Q</span><sub>c</sub></span>
+                    <span class="frac-den"><span class="var">W</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <p>Since for a complete cycle, from Equation (3.6),</p>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.11)</div>
+                <div class="formula">
+                    <span class="var">k</span><sub>R</sub>
+                    <span class="op">=</span>
+                    <span class="frac">
+                    <span class="frac-num"><span class="var">Q</span><sub>c</sub></span>
+                    <span class="frac-den">
+                        <span class="var">Q</span><sub>h</sub>
+                        <span class="op">-</span>
+                        <span class="var">Q</span><sub>c</sub>
+                    </span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number green">3.7</div>
+                <h2>Heat Pump</h2>
+            </div>
+
+            <div class="callout def">
+                <span class="callout-icon">🌸</span>
+                <div>
+                <div class="callout-title">Definition</div>
+                    A heat pump absorbs heat from a cold reservoir and delivers it to a hot reservoir by using external work. 
+                    The heat delivered to the hot reservoir is (\(Q_h)\).
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number green">3.8</div>
+                <h2>Coefficient of Performance (COP) of Heat Pump</h2>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.12)</div>
+                <div class="formula">
+                    <span class="var">k</span><sub>P</sub>
+                    <span class="op">=</span>
+                    <span class="frac">
+                    <span class="frac-num"><span class="var">Q</span><sub>h</sub></span>
+                    <span class="frac-den"><span class="var">W</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <p>Using Equation (3.6),</p>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.13)</div>
+                <div class="formula">
+                    <span class="var">k</span><sub>P</sub>
+                    <span class="op">=</span>
+                    <span class="frac">
+                    <span class="frac-num"><span class="var">Q</span><sub>h</sub></span>
+                    <span class="frac-den">
+                        <span class="var">Q</span><sub>h</sub>
+                        <span class="op">-</span>
+                        <span class="var">Q</span><sub>c</sub>
+                    </span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number green">3.9</div>
+                <h2>Relation Between COPs of Heat Pump & Refrigerator</h2>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.14)</div>
+                <div class="formula">
+                    <span class="var">k</span><sub>P</sub>
+                    <span class="op">=</span>
+                    <span class="frac">
+                    <span class="frac-num"><span class="var">Q</span><sub>h</sub></span>
+                    <span class="frac-den"><span class="var">W</span></span>
+                    </span>
+                    <span class="op">=</span>
+                    <span class="frac">
+                    <span class="frac-num">
+                        <span class="var">Q</span><sub>c</sub>
+                        <span class="op">+</span>
+                        <span class="var">W</span>
+                    </span>
+                    <span class="frac-den"><span class="var">W</span></span>
+                    </span>
+                    <span class="op">=</span>
+                    <span class="frac">
+                    <span class="frac-num"><span class="var">Q</span><sub>c</sub></span>
+                    <span class="frac-den"><span class="var">W</span></span>
+                    </span>
+                    <span class="op">+</span>
+                    <span class="var">1</span>
+                    <span class="op">=</span>
+                    <span class="var">k</span><sub>R</sub>
+                    <span class="op">+</span>
+                    <span class="var">1</span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number lavender">3.10</div>
+                <h2>Carnot Engine</h2>
+            </div>
+
+            <div class="callout def">
+                <span class="callout-icon">🌸</span>
+                <div>
+                    <div class="callout-title">Definition</div>
+                    The Carnot cycle is an idealized thermodynamic cycle that operates between 
+                    two heat reservoirs at constant temperatures. It represents the most efficient possible cycle, 
+                    consisting of two isothermal and two adiabatic processes.
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number lavender">3.11</div>
+                <h2>Deriving Efficiency of Carnot Engine</h2>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.7)</div>
+                <div class="formula">
+                    <span class="var">e</span>
+                    <span class="op">=</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">W</span></span>
+                        <span class="frac-den"><span class="var">Q</span><sub>h</sub></span>
+                    </span>
+                </div>
+            </div>
+
+            <p>For a cyclic process, the system returns to its initial state, so the change in internal energy over one complete cycle is zero,</p>
+            
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.1)</div>
+                <div class="formula">
+                    <span class="op">\(\Delta\)</span>
+                    <span class="var">U</span><sub>cycle</sub>
+                    <span class="op">=</span>
+                    <span class="var">0</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+				<div class="formula-label">✦ First Law for a Cycle</div>
+				<div class="formula">
+					<span class="var">0</span>
+					<span class="op"> = </span>
+					<span class="var"> Q </span><sub>net</sub>
+					<span class="op"> - </span>
+					<span class="var"> W</span>
+                    <span class="op"> \(\Rightarrow\) </span>
+                    <span class="var">W</span>
+                    <span class="op"> = </span>
+                    <span class="var"> Q </span><sub>net</sub>
+				</div>
+			</div>
+
+            <p>
+                Substituting Equation (3.6),
+            </p>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.8)</div>
+                <div class="formula">
+                    <span class="var">e</span>
+                    <span class="op">=</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">Q</span><sub>h</sub> - <span class="var">Q</span><sub>c</sub></span>
+                        <span class="frac-den"><span class="var">Q</span><sub>h</sub></span>
+                    </span>
+                </div>
+            </div>
+
+            <p>
+                Simplifing the Equation (3.8), we get the thermal efficiency equation
+            </p>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.9)</div>
+                <div class="formula">
+                    <span class="var">e</span>
+                    <span class="op">=</span>
+                    <span class="var">1</span>
+                    <span class="op">-</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">Q</span><sub>c</sub></span>
+                        <span class="frac-den"><span class="var">Q</span><sub>h</sub></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number lavender">3.12</div>
+                <h2>Carnot Engine, Reversible Cycle Heat Ratio</h2>
+            </div>
+            
+            <p>
+                For a <strong>reversible</strong> Carnot cycle, heat transfers occur isothermally —
+                \(Q_h\) absorbed at \(T_h\) and \(Q_c\) rejected at \(T_c\). For any reversible cycle, the ratio of heat transfers equals the ratio of temperatures,
+            </p>
+            <div class="formula-card">
+                <div class="formula-label">✦ Equation (3.15)</div>
+                <div class="formula">
+                    <span class="frac">
+                    <span class="frac-num"><span class="var">Q</span><sub>c</sub></span>
+                    <span class="frac-den"><span class="var">Q</span><sub>h</sub></span>
+                    </span>
+                    <span class="op"> = </span>
+                    <span class="frac">
+                    <span class="frac-num"><span class="var">T</span><sub>c</sub></span>
+                    <span class="frac-den"><span class="var">T</span><sub>h</sub></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+            <div class="formula-label">✦ Equation (3.16)</div>
+            <div class="formula">
+                <span class="var">e</span><sub>carnot</sub>
+                <span class="op"> = </span>
+                <span class="var">1</span>
+                <span class="op"> - </span>
+                <span class="frac">
+                <span class="frac-num"><span class="var">T</span><sub>c</sub></span>
+                <span class="frac-den"><span class="var">T</span><sub>h</sub></span>
+                </span>
+            </div>
+            </div>
+            <p>
+                This is the <strong>maximum possible efficiency</strong> for any engine operating between two reservoirs at temperatures \(T_h\) and \(T_c\).
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        tended with love &amp; good tea &nbsp;✦&nbsp; Nano library
+    </footer>
+</body>
+</html>
