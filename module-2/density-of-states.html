@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Density of States· Thermodynamics and Statistical Physics For Nanosystems · Nano Library</title>
+    <title>Density of States · Thermodynamics and Statistical Physics For Nanosystems · Nano Library</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
@@ -60,7 +60,548 @@
 		<div class="content-body">
 
             <div class="intro-card">
-				✨ 
+                ✨ The density of states quantifies the number of available microstates per unit energy interval. It serves as a central quantity in statistical physics, bridging microscopic configurations with macroscopic thermodynamic properties.
+            </div>
+
+            <div class="callout def">
+                <span class="callout-icon">🌸</span>
+                <div>
+                    <div class="callout-title">Microstate \(\Omega(E)\)</div>
+                    Let \(\Omega(E)\) denote the number of microstates with energies between \(E\) and \(E + \delta E\). In other words, \(\Omega(E)\) is the number of states per unit energy interval.
+                </div>
+            </div>
+
+            <div class="callout def">
+                <span class="callout-icon">🌸</span>
+                <div>
+                    <div class="callout-title">Number of accessible states per unit energy \(\omega(E)\)</div>
+                    The quantity \(\omega(E)\) is defined as the number of accessible states per unit energy. 
+                </div>
+            </div>
+
+            <div class="intro-card">
+                In macroscopic systems, the degeneracy of each energy level is enormous, and neighbouring energy levels are extremely closely spaced. 
+                For example, the level spacing for air in a typical room is on the order of \(10^{-24}\) eV, which is roughly \(10^{-50}\) of the total internal energy of the air. Such a spacing is far below any measurable resolution.
+                Importantly, \(\omega(E)\) does not depend on the particular choice of \(\delta E\).
+            </div>
+
+            <div class="intro-card">
+                Consider a discrete set of energy levels \(E_1, E_2, \ldots, E_n\) with a uniform spacing \(\delta E\).
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ States in energy interval</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Omega(E)\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\omega(E) \, \delta E\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                For a large system, it is impossible to control the exact quantum energy of the system as a whole. 
+                The best we can do is to confine the system to a small energy range \(\delta E\) that is nevertheless very large compared to the typical spacing between individual quantum levels. 
+                The number of states lying between \(E\) and \(E + \delta E\) is then given by the above expression.
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Functional form of the number of states as a function of energy in a 3D box</h2>
+            </div>
+
+            <div class="intro-card">
+                Consider a particle of mass \(m\) confined to a three-dimensional box of volume \(V\) with infinitely high potential walls. 
+                The Hamiltonian \(H\) of the system is:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Hamiltonian</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(H\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(P_x^2\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(2m\)</span>
+                        </span>
+                    </span>
+                    <span class="op">\(+\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(P_y^2\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(2m\)</span>
+                        </span>
+                    </span>
+                    <span class="op">\(+\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(P_z^2\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(2m\)</span>
+                        </span>
+                    </span>
+                    <span class="op">\(+\)</span>
+                    <span class="var">\(U\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Let \(\phi(E)\) denote the number of states with energy less than or equal to \(E\). For a free particle inside the box (where \(U = 0\) inside, infinite outside), the condition that the energy does not exceed \(E\) is:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Energy condition</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(P_x^2 + P_y^2 + P_z^2\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(2m\)</span>
+                        </span>
+                    </span>
+                    <span class="op">\(\leq\)</span>
+                    <span class="var">\(E\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Multiplying both sides by \(2m\) gives:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Momentum space inequality</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_x^2 + P_y^2 + P_z^2\)</span>
+                    <span class="op">\(\leq\)</span>
+                    <span class="var">\(2mE\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                The right-hand side can be written as the square of a radius:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Sphere radius squared</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_x^2 + P_y^2 + P_z^2\)</span>
+                    <span class="op">\(\leq\)</span>
+                    <span class="var">\({\color{#F08FB0}{\big(}}\sqrt{2mE}{\color{#F08FB0}{\big )}}^2\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                This inequality describes a sphere in three-dimensional momentum space. 
+                The number of states \(\phi(E)\) is proportional to the volume of that sphere, hence:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Cumulative states (3D)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\phi(E)\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(E^{3/2}\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                For a general system,
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Generalised scaling</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\phi {\color{#F08FB0}{(}} E {\color{#F08FB0}{)}}\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(E^n\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                The density of states \(\Omega(E)\), the number of states in the small energy interval \([E, E+\delta E]\), is obtained by the difference:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Density of states difference</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Omega(E)\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\phi {\color{#F08FB0}{(}} \, E \, {\color{#F08FB0}{+}} \, \delta E \, {\color{#F08FB0}{)}}\)</span>
+                    <span class="op">\(-\)</span>
+                    <span class="var">\(\phi {\color{#F08FB0}{(}} E {\color{#F08FB0}{)}}\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                For sufficiently small \(\delta E\), we approximate the difference by the derivative:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Linear approximation</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Omega {\color{#F08FB0}{(}} E {\color{#F08FB0}{)}}\)</span>
+                    <span class="op">\(\approx\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(d\phi\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(dE\)</span
+                        ></span>
+                    </span>
+                    <span class="op">\(\cdot\)</span>
+                    <span class="var">\(\delta E\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Using \(\phi(E) \propto E^{3/2}\) for the three-dimensional box, we differentiate:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Derivative of cumulative states</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(d\phi\)</span></span>
+                        <span class="frac-den"><span class="var">\(dE\)</span></span>
+                    </span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(3\)</span></span>
+                        <span class="frac-den"><span class="var">\(2\)</span></span>
+                    </span>
+                    <span class="var">\(E^{1/2}\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Therefore, for a fixed small \(\delta E\), the density of states in a three-dimensional box scales as:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Density of states scaling (3D)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Omega(E)\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(E^{1/2}\)</span>
+                </div>
+            </div>
+
+           <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Number of states for an N-particle system in a 3D box</h2>
+            </div>
+
+            <div class="intro-card">
+                Consider \(N\) particles confined to a three-dimensional potential well. 
+                The Hamiltonian, subject to the condition that the total energy does not exceed \(E\), is given by:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Hamiltonian constraint</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(H\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\displaystyle \sum_{i=1}^{3N}\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(P_i^2\)</span></span>
+                        <span class="frac-den"><span class="var">\(2m\)</span></span>
+                    </span>
+                    <span class="op">\(\leq\)</span>
+                    <span class="var">\(E\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Multiplying both sides by \(2m\) yields:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Momentum sum inequality</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(H\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\displaystyle \sum_{i=1}^{3N} P_i^2\)</span>
+                    <span class="op">\(\leq\)</span>
+                    <span class="var">\({\color{#F08FB0}{\big(}}\sqrt{2mE}{\color{#F08FB0}{\big )}}^2\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                This inequality defines a sphere in a \(3N\)-dimensional momentum space. The volume of such a sphere scales with the radius raised to the dimension \(f\), where \(f = 3N\).
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Volume scaling (generic)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(V\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(R^f\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                The variable \(f\) denotes the dimensionality of the momentum space. Consequently, the volume scales as:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Volume-energy scaling</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(V\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(E^{\frac{f}{2}}\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                For \(f = 3N\), this becomes:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Volume scaling for 3N dimensions</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(V\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(E^{\frac{3N}{2}}\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                The cumulative number of states \(\phi(E)\) is proportional to the phase-space volume. Hence:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Cumulative states</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\phi(E)\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(E^{\frac{fN}{2}}\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Differentiating with respect to energy gives the density of states factor:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Derivative of cumulative states</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(d\phi(E)\)</span></span>
+                        <span class="frac-den"><span class="var">\(dE\)</span></span>
+                    </span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(3N\)</span></span>
+                        <span class="frac-den"><span class="var">\(2\)</span></span>
+                    </span>
+                    <span class="var">\(E^{3N {\color{#F08FB0}{-}} 1}\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                The number of accessible states \(\Omega(E)\) in an energy interval \(\delta E\) then scales as:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Density of states scaling</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Omega(E)\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(N\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Finally, the entropy \(S\) is given by Boltzmann's formula, leading to extensivity:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Entropy scaling</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k {\color{#F08FB0}{\ln}} \Omega {\color{#F08FB0}{(}} E {\color{#F08FB0}{)}}\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(N\)</span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>General Expression of \(\Omega = f{\color{#F08FB0}{(}} E {\color{#F08FB0}{)}}\)</h2>
+            </div>
+
+            <div class="intro-card">
+                Consider a macroscopic system with \(f\) degrees of freedom. The total number of accessible states scales as:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Accessible states scaling</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Omega {\color{#F08FB0}{(}} E {\color{#F08FB0}{)}}\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\( {\color{#F08FB0}{(}} \, E \, {\color{#F08FB0}{-}} \, E_0 \, {\color{#F08FB0}{)}}^{\color{#6AAEE0}{f}}\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Here, \(f \sim 10^{23}\), an astronomically large number characteristic of macroscopic systems.
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Logarithm of accessible states</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\({\color{#F08FB0}{\ln}} \, \Omega {\color{#F08FB0}{(}} E {\color{#F08FB0}{)}} \)</span>
+                    <span class="op">\(\approx\)</span>
+                    <span class="var">\(f\)</span>
+                    <span class="op">\(\ln\)</span>
+                    <span class="var">\({\color{#F08FB0}{(}} \, E \, {\color{#F08FB0}{-}} \, E_0 \, {\color{#F08FB0}{)}}\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Boltzmann entropy</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k\)</span>
+                    <span class="op">\(\ln\)</span>
+                    <span class="var">\(\Omega {\color{#F08FB0}{(}} E {\color{#F08FB0}{)}} \)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Entropy scaling with f</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S\)</span>
+                    <span class="op">\(\approx\)</span>
+                    <span class="var">\(k \, f\)</span>
+                    <span class="op">\(\ln \, {\color{#F08FB0}{(}} \, {\color{#6AAEE0}{E}} \, {\color{#F08FB0}{-}} \, {\color{#6AAEE0}{E_0}} \, {\color{#F08FB0}{)}} \)</span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Dependence of the Number of Accessible Microstates \(\Omega\) on External Constraints</h2>
+            </div>
+
+            <div class="intro-card">
+                The number of accessible microstates \(\Omega\) depends on external constraints. Typical constraints include:
+            </div>
+
+            <ul>
+                <li class="no-num"><strong>Total energy \(E\)</strong>: increasing \(E\) expands the available phase space volume, thus increasing \(\Omega\).</li>
+                <li class="no-num"><strong>Volume \(V\)</strong>: a larger volume allows more spatial configurations, leading to a larger \(\Omega\).</li>
+                <li class="no-num"><strong>Number of particles \(N\)</strong>: more particles introduce additional degrees of freedom, dramatically increasing \(\Omega\).</li>
+                <li class="no-num"><strong>Position of a partition (sub-volumes)</strong>: moving a partition changes the accessible volume for each subsystem, thereby altering the total number of microstates.</li>
+            </ul>
+
+            <div class="intro-card">
+                Let \(y\) denote the set of such constraints. Then \(\Omega\) becomes a function of \(y\):
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Functional dependence on constraints</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Omega\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\Omega {\color{#F08FB0}{(}} y {\color{#F08FB0}{)}}\)</span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Equilibrium and Irreversibility</h2>
+            </div>
+
+            <div class="callout def">
+                <span class="callout-icon">🌸</span>
+                <div>
+                    <div class="callout-title">Equilibrium</div>
+                    An isolated system is in equilibrium when all its accessible microstates are equally probable.
+                </div>
+            </div>
+
+            <div class="callout def">
+                <span class="callout-icon">🌸</span>
+                <div>
+                    <div class="callout-title">Irreversible Direction</div>
+                    When an external constraint is changed (e.g., a change in total energy or volume), the number of accessible microstates in the final state is greater than that in the initial state. Such a process is irreversible.
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Irreversible increase</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Omega_f\)</span>
+                    <span class="op">\(\gg\)</span>
+                    <span class="var">\(\Omega_i\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Consequently, the entropy also increases:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Entropy increase</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S_f\)</span>
+                    <span class="op">\(\approx\)</span>
+                    <span class="var">\(\Omega_f\)</span>
+                    <span class="op">\(>\)</span>
+                    <span class="var">\(S_i\)</span>
+                    <span class="op">\(\approx\)</span>
+                    <span class="var">\(\Omega_i\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                In the rare case of a reversible process, the entropy remains constant:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Reversible case</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Omega_f\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\Omega_i\)</span>
+                </div>
             </div>
 
             <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/topic.js"></script>
