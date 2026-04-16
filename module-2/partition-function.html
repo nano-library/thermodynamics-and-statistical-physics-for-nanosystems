@@ -13,11 +13,9 @@
     <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/progress.css">
     <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/divider.css">
     <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/card.css">
-    <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/image.css">
     <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/list.css">
     <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/formula.css">
-    <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/table.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/example.css">
 </head>
 <body>
     <a class="nav-button nav-prev">
@@ -69,7 +67,1014 @@
 		<div class="content-body">
 
 			<div class="intro-card">
-				✨ 
+				✨ The partition function is the sum over all possible microstates of a system, where each state contributes less the higher its energy. 
+                It acts as a normalizing factor for probabilities and links the microscopic details to macroscopic properties like free energy.
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Partition Function for Canonical Ensemble</h2>
+            </div>
+
+            <div class="intro-card">
+                Consider an ensemble if systems \(A\), in thermal equilibrium with reservoirs \(A^{'}\).
+                The entire system and reservoir is an isolated system A*, microcanonical ensemble.
+            </div>
+
+            <div class="intro-card">
+                Let \(E\), \(E^{'}\) and \(E^{*}\) be energies of systems \(A\), \(A^{'}\) and \(A^{*}\) respectively.
+            </div>
+
+            <div class="intro-card">
+                Let \(\Omega(E)\), \(\Omega '(E^{'})\) be the number of the microstates of \(A\) and \(A^{'}\) respectively.
+            </div>
+
+            <div class="intro-card">
+                Since \(A^{*}\) is isolated, \(E^{*}\) is conserved.
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(E^*\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(E\)</span>
+                    <span class="op">\(+\)</span>
+                    <span class="var">\(E^{'}\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(E^{'}\)</span>
+                    <span class="op">=</span>
+                    <span class="var">\( {\color{#F08FB0}{\big(}} \, E^* \, {\color{#F08FB0}{-}} \, E \, {\color{#F08FB0}{\big )}}\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Number of Microstates</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\({\Omega}^{'} {\color{#F08FB0}{(}} E^{'} {\color{#F08FB0}{)}}\)</span>
+                    <span class="op">=</span>
+                    <span class="var">\({\Omega}^{'} {\color{#F08FB0}{\big(}} \, E^* \, {\color{#F08FB0}{-}} \, E \, {\color{#F08FB0}{\big )}}\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Let us assume that system A is in \(r^{\text{th}}\) state having energy \(E_r\). 
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P(E)\)</span>
+                    <span class="op">\(=\)</span>
+                        <span class="var">\(\Omega {\color{#F08FB0}{\big(}} E {\color{#F08FB0}{\big )}} \)</span>
+                    <span class="var">\({\Omega}^{'} {\color{#F08FB0}{\big(}} \, E^* \, {\color{#F08FB0}{-}} \, E \, {\color{#F08FB0}{\big )}}\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                with \(E = E_r\) and \(\Omega (E)\) is constant.
+            </div>
+
+            <div class="intro-card">
+                The isolated system \(A^*\) is likely to be found in 
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\({\Omega}^{'} {\color{#F08FB0}{\big(}} \, E^{*} \, {\color{#F08FB0}{-}} \, E_r \, {\color{#F08FB0}{\big )}}\)</span>
+                </div>
+            </div> 
+
+            <div class="formula-card">
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\({\color{#F08FB0}{\ln}}\, P_r\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\({\color{#F08FB0}{\ln}}\, {\Omega}^{'} {\color{#F08FB0}{\big(}} \, E^* \, {\color{#F08FB0}{-}} \, E_r \, {\color{#F08FB0}{\big )}}\)</span>
+                </div>
+            </div> 
+
+            <div class="intro-card">
+                Under an Assumption that the system \(A\) very small compound to reservoir \(A^{'}\), implies that 
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(E_r\)</span>
+                    <span class="op">\(\lll\)</span>
+                    <span class="var">\(E^{*}\)</span>
+                </div>
+            </div> 
+        
+            <div class="intro-card">
+                Expanding \(\ln{{\Omega}^{'}(E^{*} - E_r)}\) in taylor series
+            </div>
+                    
+            <div class="formula-card">
+                <div class="formula-label">Taylor expansion of \(f(x-a)\)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(f\)</span>
+                    <span class="op">\({\color{#F08FB0}{\big(}}\)</span>
+                    <span class="var">\(x - a\)</span>
+                    <span class="op">\({\color{#F08FB0}{\big)}}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(f(x)\)</span>
+                    <span class="op">\({\color{#F08FB0}{-}}\)</span>
+                    <span class="var">\(a f'(x)\)</span>
+                    <span class="op">\({\color{#F08FB0}{+}}\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(a^2\)</span></span>
+                        <span class="frac-den"><span class="var">\(2!\)</span></span>
+                    </span>
+                    <span class="var">\(f''(x)\)</span>
+                    <span class="op">\({\color{#F08FB0}{+}}\)</span>
+                    <span class="var">\(\ldots\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Expansion of \(\ln \Omega'(E^* - E_r)\)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\({\color{#F08FB0}{\ln}}\, {\Omega}^{'} {\color{#F08FB0}{\big(}} E^* {\color{#F08FB0}{-}} E_r {\color{#F08FB0}{\big)}}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\({\color{#F08FB0}{\ln}}\, {\Omega}^{'} {\color{#F08FB0}{\big(}} E^* {\color{#F08FB0}{\big)}}\)</span>
+                    <span class="op">\({\color{#F08FB0}{-}}\)</span>
+                    <span class="var">\(E_r\)</span>
+                    <span class="op">\({\color{#F08FB0}{\cdot}}\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(\partial \ln {\Omega}^{'}\)</span></span>
+                        <span class="frac-den"><span class="var">\(\partial E^{'}\)</span></span>
+                    </span>
+                    <span class="op">\({\color{#F08FB0}{+}}\)</span>
+                    <span class="var">\(\ldots\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Probability proportional to exponential</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\({\color{#F08FB0}{\propto}}\)</span>
+                    <span class="var">\({\color{#F08FB0}{\ln}}\, {\Omega}^{'} {\color{#F08FB0}{\big(}} E^* {\color{#F08FB0}{\big)}}\)</span>
+                    <span class="op">\({\color{#F08FB0}{-}}\)</span>
+                    <span class="var">\(\beta E_r\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Probability with normalization</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(C \, {\Omega}^{'} {\color{#F08FB0}{\big(}} E^* {\color{#F08FB0}{\big)}} \, e^{{\color{#F08FB0}{-}}\beta E_r}\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Boltzmann distribution</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(C \, e^{{\color{#F08FB0}{-}}\beta E_r}\)</span>
+                </div>
+            </div>
+
+            <div class="where-block blue">
+                <div class="where-label">where</div>
+                <div class="where-term">
+                    <span class="term-sym">\(e^{{\color{#F08FB0}{-}}\beta E_r}\)</span>
+                    <span class="term-sep">-</span>
+                    <span class="term-desc">Boltzmann factor</span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Normalization condition</h2>
+            </div>
+
+            <div class="intro-card">
+                The Boltzmann distribution must satisfy the normalization condition, which ensures that the sum of probabilities over all microstates equals unity:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Normalization condition</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\displaystyle\sum_r P_r\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(1\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Substituting the Boltzmann form</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(C \displaystyle\sum_r e^{{\color{#F08FB0}{-}}\beta E_r}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(1\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Normalization constant (partition function)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(C\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num" style="padding: 0px 32px 3px;">
+                            <span class="var">\(1\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(\displaystyle\sum_r e^{{\color{#F08FB0}{-}}\beta E_r}\)</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+                
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Boltzmann Distribution</h2>
+            </div>
+
+            <div class="intro-card">
+                The probability of finding the system in a microstate \(r\) with energy \(E_r\) is given by the Boltzmann distribution, normalized by the partition function:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Boltzmann distribution</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(e^{{\color{#F08FB0}{-}}\beta E_r}\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(\displaystyle\sum_r e^{{\color{#F08FB0}{-}}\beta E_r}\)</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Partition Function</h2>
+            </div>
+
+            <div class="intro-card">
+                The denominator of the Boltzmann distribution defines the canonical partition function \(Z\), which sums over all microstates:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Canonical partition function</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(Z\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\displaystyle\sum_r e^{{\color{#F08FB0}{-}}\beta E_r}\)</span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Mean (Expectation) of a Parameter \(y\)</h2>
+            </div>
+
+            <div class="intro-card">
+                The average value of any observable \(y\) (which takes values \(y_r\) in microstate \(r\)) is computed by weighting each microstate by its Boltzmann probability:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Ensemble average</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\bar{y}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\displaystyle\sum_r P_r y_r\)</span>
+                </div>
+            </div>      
+            
+            <div class="formula-card">
+                <div class="formula-label">Ensemble average</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\bar{y}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(\displaystyle\sum_r (e^{{\color{#F08FB0}{-}}\beta E_r}) y_r\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(\displaystyle\sum_r e^{{\color{#F08FB0}{-}}\beta E_r}\)</span>
+                        </span>
+                    </span>
+                </div>
+            </div>      
+            
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Magnetization</h2>
+            </div>
+
+            <div class="intro-card">
+                Magnetization \(M\) is defined as the net magnetic moment per unit volume. For a system of \(N_0\) non-interacting magnetic moments, the average magnetic moment \(\bar{u}\) determines the total magnetization:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Magnetization from average moment</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(M\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(N_0 {\color{#F08FB0}{\cdot}} \bar{u}\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                For a two-state paramagnet (spin-1/2) in a magnetic field \(B\), the average moment is given by a hyperbolic tangent, leading to:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Magnetization of a two-state paramagnet</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(M\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(N_0 \, \mu_0 \, {\color{#F08FB0}{\tanh}}{\color{#F08FB0}{\bigl(}}\frac{\mu_0 B}{k T}{\color{#F08FB0}{\bigr)}}\)</span>
+                </div>
+            </div>
+
+            <div class="where-block blue">
+                <div class="where-label">where</div>
+                <div class="where-term">
+                    <span class="term-sym">\(\mu_0 B\)</span>
+                    <span class="term-sep">-</span>
+                    <span class="term-desc">magnetic energy</span>
+                </div>
+                <div class="where-term">
+                    <span class="term-sym">\(k T\)</span>
+                    <span class="term-sep">-</span>
+                    <span class="term-desc">thermal energy</span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Weak-field Limit: Curie's Law</h2>
+            </div>
+
+            <div class="intro-card">
+                In the weak-field regime, the magnetic energy is much smaller than the thermal energy:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Weak-field condition</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\mu_0 B\)</span>
+                    <span class="op">\(\ll\)</span>
+                    <span class="var">\(k T\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Under this condition, the hyperbolic tangent can be approximated by its argument:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Linear approximation of \(\tanh\)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\({\color{#F08FB0}{\tanh}}{{\color{#F08FB0}{\big (}}\frac{\mu_0 B}{k T}{\color{#F08FB0}{\big )}}}\)</span>
+                    <span class="op">\(\approx\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(\mu_0 B\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(k T\)</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Substituting into the expression for magnetization gives:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Magnetization in weak field</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(M\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(N_0\)</span>
+                    <span class="op">\(\cdot\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(\mu_0^2 B\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(k T\)</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                The magnetic susceptibility \(\chi\) is defined as the ratio of magnetization to the applied field (per unit volume). For a sample of volume \(V\):
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Definition of susceptibility</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\chi\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(M\)</span></span>
+                        <span class="frac-den"><span class="var">\(V\)</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Inserting the weak-field magnetization yields:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Curie law</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\chi\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(N_0 \mu_0^2\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(V k T\)</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Thus the susceptibility is inversely proportional to temperature:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Curie's law proportionality</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\chi\)</span>
+                    <span class="op">\(\propto\)</span>
+                     <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(1\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(T\)</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+                
+           <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Mean Energy</h2>
+            </div>
+
+            <div class="intro-card">
+                The average (mean) energy of a system in the canonical ensemble is given by the weighted sum over microstates, where the weight is the Boltzmann factor:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Ensemble average energy</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\bar{E}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(\displaystyle\sum_r (e^{{\color{#F08FB0}{-}}\beta E_r}) \, E_r\)</span></span>
+                        <span class="frac-den"><span class="var">\(\displaystyle\sum_r e^{{\color{#F08FB0}{-}}\beta E_r}\)</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Notice that the factor \(e^{-\beta E_r} E_r\) can be expressed as a derivative with respect to \(\beta\):
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Derivative identity</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(e^{-\beta E_r} \, E_r\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="op">\(-\)</span>
+                    <span class="var">\(\displaystyle\frac{\partial}{\partial \beta} \bigl( e^{{\color{#F08FB0}{-}}\beta E_r} \bigr)\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Substituting this into the expression for \(\bar{E}\) allows us to take the derivative outside the sum:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Derivative of the sum</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\bar{E}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(\displaystyle\sum_r {\color{#F08FB0}{-}}\displaystyle\frac{\partial}{\partial \beta} \bigl( e^{{\color{#F08FB0}{-}}\beta E_r} \bigr)\)</span></span>
+                        <span class="frac-den"><span class="var">\(\displaystyle\sum_r e^{{\color{#F08FB0}{-}}\beta E_r}\)</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Pulling the derivative out</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\bar{E}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\({\color{#F08FB0}{-}}\displaystyle\frac{\partial}{\partial \beta} {\color{#F08FB0}{\Big(}} \displaystyle\sum_r e^{{\color{#F08FB0}{-}}\beta E_r} {\color{#F08FB0}{\Big )}}\)</span></span>
+                        <span class="frac-den"><span class="var">\(\displaystyle\sum_r e^{{\color{#F08FB0}{-}}\beta E_r}\)</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Recognizing the partition function \(Z = \sum_r e^{-\beta E_r}\), we obtain a compact formula for the mean energy:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Mean energy in terms of \(Z\)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\bar{E}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="op">\(-\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(1\)</span></span>
+                        <span class="frac-den"><span class="var">\(Z\)</span></span>
+                    </span>
+                    <span class="op">\(\cdot\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(\partial Z\)</span></span>
+                        <span class="frac-den"><span class="var">\(\partial \beta\)</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-number">✦ </div>
+                <div class="formula-label">✦ Mean Energy</div>
+                <div class="formula">
+                    <span class="var">\(\bar{E}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="op">\(-\)</span>
+                    <span class="var">\(\displaystyle\frac{\partial}{\partial \beta} \left(\ln{Z}\right)\)</span>
+                </div>
+            </div>
+
+            <div class="divider">
+                <span class="divider-line"></span>
+                <span class="divider-flower">✦</span>
+                <span class="divider-flower">❀</span>
+                <span class="divider-flower">✦</span>
+                <span class="divider-line"></span>
+		    </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-icon">✦</span>
+                    <span class="example-title">Example 1</span>
+                    <span class="example-sub">finding the mean of magnetic moment</span>
+                </div>
+                <div class="example-body">
+                    <div class="example-block problem">
+                        <div class="block-label">Problem</div>
+                        <div class="block-content">
+                            <p>
+                                Consider a paramagnetic material consisting \(N_0\) identical, non-interacting atoms per unit volume. 
+                                Each atom has spin \(\frac{1}{2}\) and magnetic moment \(\mu_0\). 
+                                The system is in thermal equilibrium at temperature \(T\) with a heat reservoir \(A'\). 
+                                Each atom can be treated as an independent system in contact with the reservoir at temperature \(T\). 
+                                For a single atom, the magnetic moment is \(+\mu_0\) when the spin is aligned with the external magnetic field \(B\) (up state) and \(-\mu_0\) when anti-aligned (down state).
+                                Using the canonical ensemble, construct the partition function \(Z\) for a single atom and derive the mean magnetic moment \(\bar{u}\).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="example-block solution">
+                        <div class="block-label">Solution</div>
+                        <div class="block-content">
+                            <p>The partition function for a single spin-1/2 atom in a magnetic field is the sum over all microstates of the Boltzmann factor:</p>
+
+                            \[
+                                Z = \sum_r e^{-\beta E_r}
+                            \]
+
+                            <p>Since the atom has only two states (spin up and spin down), the sum runs from r = 1 to 2:</p>
+
+                            \[
+                                Z = \sum_{r=1}^2 e^{-\beta E_r}
+                            \]
+
+                            <p>Writing the two terms explicitly for the up and down spin states:</p>
+
+                            \[
+                                Z = e^{-\beta E_{\text{up}}} + e^{-\beta E_{\text{down}}}
+                            \]
+
+                            <p>The energy of a magnetic moment \(\mu_0\) in a field \(B\) is \(E = -\vec{\mu} \cdot \vec{B}\). For the up state, the magnetic moment is \(+\mu_0\) (aligned with the field), giving energy \(E_{\text{up}} = -\mu_0 B\). For the down state, the magnetic moment is \(-\mu_0\) (anti-aligned with the field), giving energy \(E_{\text{down}} = +\mu_0 B\). Substituting these:</p>
+
+                            \[
+                                Z = e^{-\beta (-\mu_0 B)} + e^{-\beta (+\mu_0 B)}
+                            \]
+
+                            <p>Simplifying the exponents:</p>
+
+                            \[
+                                Z = e^{\beta \mu_0 B} + e^{-\beta \mu_0 B}
+                            \]
+
+                            <p>This sum of exponentials can be written in terms of the hyperbolic cosine:</p>
+
+                            \[
+                                Z = 2 \cosh{(\beta \mu_0 B)}
+                            \]
+
+                            <p>The mean magnetic moment \(\bar{u}\) is calculated by averaging the magnetic moment \(y_r\) over all states using the probability \(P_r = e^{-\beta E_r}/Z\):</p>
+
+                            \[
+                                \bar{u} = \sum_r P_r y_r
+                            \]
+
+                            \[
+                                \bar{u} = \frac{\sum_r e^{-\beta E_r} y_r}{\sum_r e^{-\beta E_r}}
+                            \]
+
+                            <p>For the two-state system, the magnetic moment is \(+\mu_0\) for the up state and \(-\mu_0\) for the down state. Substituting the energies and moments:</p>
+
+                            \[
+                                \bar{u} = \frac{e^{-\beta (-\mu_0 B)} (+\mu_0) + e^{-\beta (+\mu_0 B)} (-\mu_0)}{e^{-\beta (-\mu_0 B)} + e^{-\beta (+\mu_0 B)}}
+                            \]
+
+                            \[
+                                \bar{u} = \frac{e^{\beta \mu_0 B} (+\mu_0) + e^{-\beta \mu_0 B} (-\mu_0)}{e^{\beta \mu_0 B} + e^{-\beta \mu_0 B}}
+                            \]
+
+                            <p>Factoring \(\mu_0\) in the numerator:</p>
+
+                            \[
+                                \bar{u} = \mu_0 \left( \frac{e^{\beta \mu_0 B} - e^{-\beta \mu_0 B}}{e^{\beta \mu_0 B} + e^{-\beta \mu_0 B}} \right)
+                            \]
+
+                            <p>Recognizing the fraction as \(\tanh(\beta \mu_0 B)\), the mean magnetic moment becomes:</p>
+
+                            \[
+                                \bar{u} = \mu_0 \tanh{(\beta \mu_0 B)}
+                            \] 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-icon">✦</span>
+                    <span class="example-title">Example 2</span>
+                    <span class="example-sub">quantum harmonic oscillator</span>
+                </div>
+                <div class="example-body">
+                    <div class="example-block problem">
+                        <div class="block-label">Problem</div>
+                        <div class="block-content">
+                            <p>
+                                Consider a quantum harmonic oscillator with Hamiltonian \(H = \frac{P^2}{2m} + \frac{1}{2}m\omega^2 x^2\). 
+                                The system is in thermal equilibrium at temperature \(T\) with a heat reservoir. 
+                                Using the canonical ensemble, construct the partition function \(Z\) for the oscillator and derive the mean energy \(\bar{E}\).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="example-block solution">
+                        <div class="block-label">Solution</div>
+                        <div class="block-content">
+                            <p>The energy eigenvalues of a quantum harmonic oscillator are given by:</p>
+
+                            \[
+                                E_n = \left(n + \frac{1}{2}\right)\hbar\omega, \quad n = 0, 1, 2, \ldots
+                            \]
+
+                            <p>The canonical partition function is the sum over all microstates of the Boltzmann factor:</p>
+
+                            \[
+                                Z = \sum_r e^{-\beta E_r}
+                            \]
+
+                            <p>Substituting the energy eigenvalues:</p>
+
+                            \[
+                                Z = \sum_{n=0}^{\infty} e^{-\beta\left(n+\frac{1}{2}\right)\hbar\omega}
+                            \]
+
+                            <p>Factoring out the constant term:</p>
+
+                            \[
+                                Z = e^{-\beta\frac{\hbar\omega}{2}} \sum_{n=0}^{\infty} e^{-\beta n\hbar\omega}
+                            \]
+
+                            <p>The sum is a geometric series. Using \(\sum_{n=0}^{\infty} x^n = \frac{1}{1-x}\) with \(x = e^{-\beta\hbar\omega}\):</p>
+
+                            \[
+                                Z = \frac{e^{-\beta\frac{\hbar\omega}{2}}}{1 - e^{-\beta\hbar\omega}}
+                            \]
+
+                            <p>The mean energy is calculated using:</p>
+
+                            \[
+                                \bar{E} = -\frac{\partial \ln Z}{\partial \beta}
+                            \]
+
+                            <p>Taking the logarithm of \(Z\):</p>
+
+                            \[
+                                \ln Z = -\frac{\beta\hbar\omega}{2} - \ln\left(1 - e^{-\beta\hbar\omega}\right)
+                            \]
+
+                            <p>Differentiating with respect to \(\beta\):</p>
+
+                            \[
+                                \bar{E} = -\frac{\partial}{\partial \beta}\left[-\frac{\beta\hbar\omega}{2} - \ln\left(1 - e^{-\beta\hbar\omega}\right)\right]
+                            \]
+
+                            \[
+                                \bar{E} = \frac{\hbar\omega}{2} + \frac{\hbar\omega}{e^{\beta\hbar\omega} - 1}
+                            \]
+
+                            <p><strong>Special Cases:</strong></p>
+
+                            <p><em>Case 1: Absolute Zero (\(T = 0\), \(\beta \rightarrow \infty\))</em></p>
+
+                            <p>As \(\beta \rightarrow \infty\), \(e^{\beta\hbar\omega} \rightarrow \infty\), so the second term vanishes:</p>
+
+                            \[
+                                \bar{E} = \frac{1}{2}\hbar\omega
+                            \]
+
+                            <p>This is the zero-point energy of the oscillator.</p>
+
+                            <p><em>Case 2: High Temperature (\(kT \gg \hbar\omega\))</em></p>
+
+                            <p>For high temperatures, \(\beta\hbar\omega = \frac{\hbar\omega}{kT}\) is small. Expanding \(e^{\beta\hbar\omega} \approx 1 + \frac{\hbar\omega}{kT}\):</p>
+
+                            \[
+                                \bar{E} \approx \frac{\hbar\omega}{2} + \frac{\hbar\omega}{1 + \frac{\hbar\omega}{kT} - 1}
+                            \]
+
+                            \[
+                                \bar{E} \approx \frac{\hbar\omega}{2} + kT
+                            \]
+
+                            <p>Since \(kT \gg \hbar\omega\), the zero-point energy \(\frac{\hbar\omega}{2}\) is negligible:</p>
+
+                            \[
+                                \bar{E} \approx kT
+                            \]
+
+                            <p>The Hamiltonian has two quadratic terms (kinetic and potential), giving two degrees of freedom. According to the equipartition theorem, each degree of freedom contributes \(\frac{1}{2}kT\) to the average energy:</p>
+
+                            \[
+                                \bar{E} = f \cdot \frac{1}{2}kT = 2 \cdot \frac{1}{2}kT = kT
+                            \]
+
+                            <p>This matches the high-temperature limit derived from the partition function.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-icon">✦</span>
+                    <span class="example-title">Example 3</span>
+                    <span class="example-sub">finding the mean energy of an ideal gas</span>
+                </div>
+                <div class="example-body">
+                    <div class="example-block problem">
+                        <div class="block-label">Problem</div>
+                        <div class="block-content">
+                            <p>
+                                Consider an ideal gas of \(N\) identical and non-interacting molecules of mass \(m\), confined to a reactangle box of volume \(V = L_xL_yL_z\).
+                                The gas is in thermal equilibrium at temperature \(T\).
+                            </p> 
+                            <div class="problem-parts">
+                                <div class="problem-part">
+                                    <span class="part-label">a</span>
+                                    <span class="part-content">
+                                        Write down energy eigen values for a single molecule confined in the box.
+                                    </span>
+                                </div>
+                                <div class="problem-part">
+                                    <span class="part-label">b</span>
+                                    <span class="part-content">
+                                        Construct canonical partition function (\(Z\))
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="example-block solution">
+                        <div class="block-label">Solution</div>
+                        <div class="block-content">
+                                <p><em>Part (a): Energy eigenvalues</em></p>
+
+                                <p>For a single particle in a one-dimensional box of length \(L\), the energy eigenvalues are:</p>
+
+                                \[
+                                    E_n = \frac{n^2 h^2}{8 m L^2}, \quad n = 1, 2, 3, \dots
+                                \]
+
+                                <p>For a three-dimensional rectangular box with sides \(L_x, L_y, L_z\), the energy eigenvalues are:</p>
+
+                                \[
+                                    E_{n_x, n_y, n_z} = \frac{h^2}{8m} \left( \frac{n_x^2}{L_x^2} + \frac{n_y^2}{L_y^2} + \frac{n_z^2}{L_z^2} \right)
+                                \]
+
+                                <p>
+                                    where \(n_x, n_y, n_z = 1, 2, 3, \dots\) <br>
+                                    <em>Part (b): Canonical partition function for a single molecule</em>
+                                </p>
+
+                                <p>The canonical partition function is the sum over all microstates of the Boltzmann factor:</p>
+
+                                \[
+                                    Z = \sum_{n_x, n_y, n_z} e^{-\beta E_{n_x, n_y, n_z}}
+                                \]
+
+                                <p>Substituting the energy eigenvalues:</p>
+
+                                \[
+                                    Z = \sum_{n_x=1}^{\infty} \sum_{n_y=1}^{\infty} \sum_{n_z=1}^{\infty} \exp\left[ -\beta \frac{h^2}{8m} \left( \frac{n_x^2}{L_x^2} + \frac{n_y^2}{L_y^2} + \frac{n_z^2}{L_z^2} \right) \right]
+                                \]
+
+                                <p>The sum factorizes into a product of three independent sums:</p>
+
+                                \[
+                                    Z = \left( \sum_{n_x=1}^{\infty} e^{-\beta \frac{h^2}{8m} \frac{n_x^2}{L_x^2}} \right)
+                                        \left( \sum_{n_y=1}^{\infty} e^{-\beta \frac{h^2}{8m} \frac{n_y^2}{L_y^2}} \right)
+                                        \left( \sum_{n_z=1}^{\infty} e^{-\beta \frac{h^2}{8m} \frac{n_z^2}{L_z^2}} \right)
+                                \]
+
+                                <p>Define the constant \(\alpha_x = \frac{\beta h^2}{8m L_x^2}\). Then the \(x\)-direction sum is:</p>
+
+                                \[
+                                    Z_x = \sum_{n_x=1}^{\infty} e^{-\alpha_x n_x^2}
+                                \]
+
+                                <p>For a macroscopic box, the energy levels are very closely spaced, so we approximate the sum by an integral. Extend the lower limit to zero:</p>
+
+                                \[
+                                    Z_x \approx \int_0^{\infty} e^{-\alpha_x n_x^2} \, dn_x
+                                \]
+
+                                <p>The Gaussian integral evaluates to:</p>
+
+                                \[
+                                    \int_0^{\infty} e^{-a x^2} dx = \frac{1}{2} \sqrt{\frac{\pi}{a}}
+                                \]
+
+                                <p>Thus,</p>
+
+                                \[
+                                    Z_x = \frac{1}{2} \sqrt{\frac{\pi}{\alpha_x}}
+                                \]
+
+                                <p>Substitute \(\alpha_x = \frac{\beta h^2}{8m L_x^2}\):</p>
+
+                                \[
+                                    Z_x = \frac{1}{2} \sqrt{\frac{\pi \cdot 8m L_x^2}{\beta h^2}}
+                                \]
+
+                                <p>Simplify the square root:</p>
+
+                                \[
+                                    Z_x = \frac{L_x}{h} \sqrt{\frac{2\pi m}{\beta}}
+                                \]
+
+                                <p>Since \(\beta = \frac{1}{k_B T}\),</p>
+
+                                \[
+                                    Z_x = \frac{L_x}{h} \sqrt{2\pi m k_B T}
+                                \]
+
+                                <p>Similarly for the \(y\) and \(z\) directions:</p>
+
+                                \[
+                                    Z_y = \frac{L_y}{h} \sqrt{2\pi m k_B T}
+                                \]
+
+                                \[
+                                    Z_z = \frac{L_z}{h} \sqrt{2\pi m k_B T}
+                                \]
+
+                                <p>The total single-molecule partition function is the product:</p>
+
+                                \[
+                                    Z = Z_x Z_y Z_z
+                                \]
+
+                                \[
+                                    Z = \frac{L_x L_y L_z}{h^3} \left( 2\pi m k_B T \right)^{3/2}
+                                \]
+
+                                <p>Since \(V = L_x L_y L_z\),</p>
+
+                                \[
+                                    Z = \frac{V}{h^3} \left( 2\pi m k_B T \right)^{3/2}
+                                \]
+
+                                <p><em>Average Energy</em></p>
+
+                                <p>The average energy of a single molecule is obtained from:</p>
+
+                                \[
+                                    \langle E \rangle = -\frac{\partial \ln Z}{\partial \beta}
+                                \]
+
+                                <p>First compute \(\ln Z\):</p>
+
+                                \[
+                                    \ln Z = \ln V - 3\ln h + \frac{3}{2} \ln(2\pi m) - \frac{3}{2} \ln \beta
+                                \]
+
+                                <p>Differentiate with respect to \(\beta\):</p>
+
+                                \[
+                                    \frac{\partial \ln Z}{\partial \beta} = -\frac{3}{2} \cdot \frac{1}{\beta}
+                                \]
+
+                                <p>Thus,</p>
+
+                                \[
+                                    \langle E \rangle = -\left( -\frac{3}{2\beta} \right)
+                                \]
+
+                                \[
+                                    \langle E \rangle = \frac{3}{2\beta}
+                                \]
+
+                                <p>Substitute \(\beta = \frac{1}{k_B T}\):</p>
+
+                                \[
+                                    \langle E \rangle = \frac{3}{2} k_B T
+                                \]
+
+                                <p>
+                                    This result agrees with the equipartition theorem. 
+                                    A molecule in three dimensions has three translational degrees of freedom, each contributing \(\frac{1}{2} k_B T\) to the average energy:
+                                </p>
+
+                                \[
+                                    \langle E \rangle = f \cdot \frac{1}{2} k_B T
+                                \]
+
+                                \[
+                                    \langle E \rangle = 3 \cdot \frac{1}{2} k_B T
+                                \]
+
+                                \[
+                                    \langle E \rangle = \frac{3}{2} k_B T
+                                \]                  
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/topic.js"></script>
