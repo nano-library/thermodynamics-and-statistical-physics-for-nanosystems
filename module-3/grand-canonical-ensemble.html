@@ -68,7 +68,143 @@
 		<div class="content-body">
 
             <div class="intro-card">
-				✨ 
+                ✨ The grand canonical ensemble describes an open system in thermal and chemical equilibrium with a reservoir, allowing exchange of both energy and particles.
+            </div>
+
+            <div class="intro-card">
+                Let \(E\), \(E'\) and \(E^*\) be the energies of systems \(A\), \(A'\) and the total system \(A^*\), respectively.
+            </div>
+
+            <div class="intro-card">
+                Let \(N\), \(N'\) and \(N^*\) be the number of particles in systems \(A\), \(A'\) and \(A^*\), respectively.
+            </div>
+
+            <div class="intro-card">
+                Let \(E_r\) and \(N_r\) be the energy and number of particles of the \(r^{\text{th}}\) microstate of system \(A\).
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Energy of the reservoir</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(E'\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(E^* - E_r\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Particle number of the reservoir</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(N'\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(N^* - N_r\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                The probability of finding system \(A\) in a state with energy \(E_r\) and particle number \(N_r\) is proportional to the number of microstates of the reservoir:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Probability proportional to reservoir multiplicity</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(\Omega'(E^* - E_r,\, N^* - N_r)\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Expanding the logarithm of \(\Omega'\) to first order and using the definitions \(\beta = 1/(kT)\) and \(\alpha = -\mu/(kT)\), we obtain:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Exponential form</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(e^{-\beta E_r - \alpha N_r}\)</span>
+                </div>
+            </div>
+
+            <div class="where-block blue">
+                <div class="where-label">where</div>
+                <div class="where-term">
+                    <span class="term-sym">\(\beta = \dfrac{1}{kT}\)</span>
+                    <span class="term-sep">,</span>
+                    <span class="term-desc">inverse temperature</span>
+                </div>
+                <div class="where-term">
+                    <span class="term-sym">\(\alpha = -\dfrac{\mu}{kT}\)</span>
+                    <span class="term-sep">,</span>
+                    <span class="term-desc">chemical potential scaled</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Alternative form</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(e^{-\beta E_r - \mu\beta N_r}\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Alternative form</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(e^{-\beta(E_r - \mu N_r)}\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                The grand canonical partition function is the normalization factor, summing over all possible states with different energies and particle numbers:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Grand partition function</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\mathcal{Z}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\displaystyle\prod_r \sum_{n_i} e^{-\beta(E_r - \mu N_r)}\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                For fermions, the occupation numbers \(n_i\) are restricted to 0 or 1:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Fermions</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\mathcal{Z}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\displaystyle\prod_i \left(1 + e^{-\beta(E_i - \mu)}\right)\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                For bosons, occupation numbers can be any non‑negative integer, leading to a geometric series:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">Bosons</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\mathcal{Z}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\displaystyle\prod_i \frac{1}{1 - e^{-\beta(E_i - \mu)}}\)</span>
+                </div>
             </div>
 
 	        <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/topic.js"></script>
