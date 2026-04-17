@@ -68,8 +68,329 @@
 		<div class="content-body">
 
 			<div class="intro-card">
-				✨ 
-			</div>
+                Consider a monoatomic ideal gas of \(N\) atoms. For a single atom, the logarithm of the single-particle partition function is:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Single-particle \({\color{#F08FB0}{\ln}}Z\)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\({\color{#F08FB0}{\ln}} Z\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\({\color{#F08FB0}{\ln}}V\)</span>
+                    <span class="op">\(-\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(3\)</span></span>
+                        <span class="frac-den"><span class="var">\(2\)</span></span>
+                    </span>
+                    <span class="op">\({\color{#F08FB0}{\ln}}\beta + \text{constant}\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                The average energy of a single atom follows from \(\langle E \rangle = -\frac{\partial}{\partial \beta} \ln Z\):
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Average energy per atom</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\langle E \rangle\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\overline{E}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="op">\(-\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(\partial\)</span></span>
+                        <span class="frac-den"><span class="var">\(\partial \beta\)</span></span>
+                    </span>
+                    <span class="var">\({\color{#F08FB0}{\ln}}Z\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(3\)</span></span>
+                        <span class="frac-den"><span class="var">\(2\)</span></span>
+                    </span>
+                    <span class="var">\(kT\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                For \(N\) atoms, the total partition function \(Z_{\text{total}}\) is the product of individual partition functions if the particles were distinguishable:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Product of individual partition functions</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(Z_{\text{total}}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(Z_1 Z_2 \cdots Z_N\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(Z^N\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Translational partition function</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(Z_{\text{total}}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(V\)</span></span>
+                        <span class="frac-den"><span class="var">\(h^3\)</span></span>
+                    </span>
+                    <span class="var">\((2 \pi m k T)^{3/2}\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Logarithm of total partition function</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\({\color{#F08FB0}{\ln}}Z_{\text{total}}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(N \left[ {\color{#F08FB0}{\ln}}V - \frac{3}{2} {\color{#F08FB0}{\ln}}\beta + \text{constant} \right]\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Average energy from total partition function</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\langle E \rangle\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="op">\(-\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(\partial {\color{#F08FB0}{\ln}}Z_{\text{total}}\)</span></span>
+                        <span class="frac-den"><span class="var">\(\partial \beta\)</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Entropy of ideal gas (uncorrected)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k \left( {\color{#F08FB0}{\ln}}Z_{\text{total}} + \beta \langle E \rangle \right)\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Substituting \(\ln Z_{\text{total}}\) and \(\langle E \rangle = \frac{3}{2} N k T = \frac{3}{2} N / \beta\):
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Substitution step 1</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k \left[ {\color{#F08FB0}{\ln}}Z_{\text{total}} + \beta \cdot \frac{3}{2} N \cdot \frac{1}{\beta} \right]\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Substitution step 2</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k \left[ {\color{#F08FB0}{\ln}}Z_{\text{total}} + \frac{3}{2} N \right]\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Entropy in terms of \(V\) and \(T\)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k \left[ N \left( {\color{#F08FB0}{\ln}}V - \frac{3}{2} {\color{#F08FB0}{\ln}}\frac{1}{kT} \right) + \frac{3}{2} N \right]\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Expanding the logarithm</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k \left[ N \left( {\color{#F08FB0}{\ln}}V + \frac{3}{2} {\color{#F08FB0}{\ln}}k + \frac{3}{2} {\color{#F08FB0}{\ln}}T + c \right) + \frac{3}{2} N \right]\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Collecting terms</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k \left[ N {\color{#F08FB0}{\ln}}V + \frac{3}{2} N {\color{#F08FB0}{\ln}}T + \text{constant} \right]\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Thus the uncorrected entropy of an ideal gas is:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Uncorrected entropy</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k N \left[ {\color{#F08FB0}{\ln}}V + \frac{3}{2} {\color{#F08FB0}{\ln}}T + \text{constant} \right]\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Now consider what happens when the entire volume is divided into two equal halves by a partition. Let the entropy of each half be \(S_1\) and \(S_2\).
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Entropy of left half</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S_1\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(k N\)</span></span>
+                        <span class="frac-den"><span class="var">\(2\)</span></span>
+                    </span>
+                    <span class="var">\(\left[ {\color{#F08FB0}{\ln}}\frac{V}{2} + \frac{3}{2} {\color{#F08FB0}{\ln}}T + \text{constant} \right]\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Entropy of right half</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S_2\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(k N\)</span></span>
+                        <span class="frac-den"><span class="var">\(2\)</span></span>
+                    </span>
+                    <span class="var">\(\left[ {\color{#F08FB0}{\ln}}\frac{V}{2} + \frac{3}{2} {\color{#F08FB0}{\ln}}T + \text{constant} \right]\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                The total entropy after inserting the partition is \(S_{\text{total}} = S_1 + S_2\). We expect it to equal the original entropy.
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Total entropy after partition</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S_{\text{total}}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k N \left[ {\color{#F08FB0}{\ln}}V - {\color{#F08FB0}{\ln}}2 + \frac{3}{2} {\color{#F08FB0}{\ln}}T + \text{constant} \right]\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                The difference between the original entropy \(S\) (before partition) and \(S_{\text{total}}\) (after partition) is:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Entropy difference</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Delta S = S - S_{\text{total}}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k N {\color{#F08FB0}{\ln}}2\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                We expect \(\Delta S = 0\), but we obtain \(\Delta S = k N \ln 2\). This contradiction is known as the <strong>Gibbs paradox</strong>.
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Resolution of the Gibbs Paradox</h2>
+            </div>
+
+            <div class="intro-card">
+                The error arises from assuming \(Z_{\text{total}} = Z^N\), which overcounts permutations of indistinguishable particles. The correct partition function includes a factor of \(1/N!\):
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Corrected total partition function</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(Z'_{\text{total}}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(Z^N\)</span></span>
+                        <span class="frac-den"><span class="var">\(N!\)</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Using Stirling’s approximation \(\ln N! \approx N \ln N - N\), the corrected entropy becomes extensive and the partition paradox disappears:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Corrected entropy (Sackur-Tetrode)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S_{\text{corrected}}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k N \left[ {\color{#F08FB0}{\ln}}\left( \frac{V}{N} \right) + \frac{3}{2} {\color{#F08FB0}{\ln}}T + \text{constant} \right]\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Repeating the two-halves calculation with the corrected entropy gives:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Entropy of each half (corrected)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S_1\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k \frac{N}{2} \left[ {\color{#F08FB0}{\ln}}\left( \frac{V/2}{N/2} \right) + \frac{3}{2} {\color{#F08FB0}{\ln}}T + \text{const} \right]\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Entropy of each half (corrected)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S_1\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k \frac{N}{2} \left[ {\color{#F08FB0}{\ln}}\left( \frac{V}{N} \right) + \frac{3}{2} {\color{#F08FB0}{\ln}}T + \text{const} \right]\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Total corrected entropy after partition</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S_{\text{total}}' = S_1 + S_2\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(k N \left[ {\color{#F08FB0}{\ln}}\left( \frac{V}{N} \right) + \frac{3}{2} {\color{#F08FB0}{\ln}}T + \text{const} \right]\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Entropy difference vanishes</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Delta S = S_{\text{original}} - S_{\text{total}}' = 0\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Mathematically, permuting identical particles is allowed, but physically it corresponds to the same microstate. The \(1/N!\) factor corrects the overcounting and resolves the Gibbs paradox.
+            </div>
                 
 	        <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/topic.js"></script>
             <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/navigation.js"></script>
