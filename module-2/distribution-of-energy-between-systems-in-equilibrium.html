@@ -68,8 +68,284 @@
 		<div class="content-body">
 
 			<div class="intro-card">
-				✨ 
-			</div>
+                Suppose that the systems \(A\) and \(A'\) are in thermal equilibrium with each other. 
+                Then the energy of \(A\) can assume a large range of possible values, but these values occur by no means with equal probability. 
+                Let \(A\) have an energy \(E\) (more precisely, an energy between \(E\) and \(E + \delta E\)). 
+                Then the corresponding energy of \(A'\) is known to be:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Energy of \(A'\) given total energy</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(E'\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(E^{(0)} - E\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                The number of states accessible to the entire system \(A^{(0)}\) can thus be regarded as a function of a single parameter, the energy \(E\) of system \(A\). 
+                Let us denote by \(\omega^{(0)}(E)\) the number of states accessible to \(A^{(0)}\) when \(A\) has an energy between \(E\) and \(E + \delta E\). 
+                Our fundamental postulate asserts that in equilibrium \(A\) must be equally likely to be found in any one of its states. 
+                Hence it follows that the probability \(P(E)\) of finding this combined system in a configuration where \(A\) has an energy between \(E\) and \(E + \delta E\) is simply proportional to the number of states \(\omega^{(0)}(E)\) accessible to the total system \(A^{(0)}\) under these circumstances, where \(C\) is a constant of proportionality independent of \(E\):
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Probability proportional to multiplicity</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P(E)\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(C \, \omega^{(0)}(E)\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                When \(A\) has an energy \(E\), it can be in any one of its \(\Omega(E)\) possible states. At the same time, \(A'\) must then have an energy \(E' = E^{(0)} - E\) so that it can be in any one of its \(\Omega'(E') = \Omega'(E^{(0)} - E)\) possible states. Since every possible state of \(A\) can be combined with every possible state of \(A'\) to give a different state of the total system \(A^{(0)}\), it follows that the number of distinct states accessible to \(A^{(0)}\) when \(A\) has energy \(E\) is simply the product \(\Omega(E) \, \Omega'(E^{(0)} - E)\). Hence the logarithm of the probability is:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Log probability</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\({\color{#F08FB0}{\ln}} P(E)\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\({\color{#F08FB0}{\ln}} C\)</span>
+                    <span class="op">\(+\)</span>
+                    <span class="var">\({\color{#F08FB0}{\ln}} \Omega(E)\)</span>
+                    <span class="op">\(+\)</span>
+                    <span class="var">\({\color{#F08FB0}{\ln}} \Omega'(E^* - E)\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Differentiating with respect to \(E\) and setting the derivative to zero at the most probable energy \(\tilde{E}\) (where \(P(E)\) is maximum) gives:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Condition for maximum probability</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(0\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\({\color{#F08FB0}{d}}\, {\color{#F08FB0}{\ln}} \Omega(E)\)</span></span>
+                        <span class="frac-den"><span class="var">\({\color{#F08FB0}{d}} E\)</span></span>
+                    </span>
+                    <span class="op">\(+\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\({\color{#F08FB0}{d}} \, {\color{#F08FB0}{\ln}} \Omega'(E')\)</span></span>
+                        <span class="frac-den"><span class="var">\({\color{#F08FB0}{d}}E'\)</span></span>
+                    </span>
+                    <span class="op">\(\cdot\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\({\color{#F08FB0}{d}} E'\)</span></span>
+                        <span class="frac-den"><span class="var">\({\color{#F08FB0}{d}} E\)</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                With \(E' = E^* - E\), we have \(\frac{dE'}{dE} = -1\):
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Derivative of \(E'\) with respect to \(E\)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\({\color{#F08FB0}{d}} E'\)</span></span>
+                        <span class="frac-den"><span class="var">\({\color{#F08FB0}{d}} E\)</span></span>
+                    </span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\({\color{#F08FB0}{-}} 1\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Substituting, the equilibrium condition becomes:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equilibrium condition (logarithmic derivatives)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(0\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\({\color{#F08FB0}{d}} \, {\color{#F08FB0}{\ln}} \Omega\)</span></span>
+                        <span class="frac-den"><span class="var">\({\color{#F08FB0}{d}} E\)</span></span>
+                    </span>
+                    <span class="op">\(-\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\({\color{#F08FB0}{d}} \, {\color{#F08FB0}{\ln}} \Omega'\)</span></span>
+                        <span class="frac-den"><span class="var">\({\color{#F08FB0}{d}} E'\)</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Rearranging yields the equality of the derivatives:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equality of logarithmic derivatives</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\({\color{#F08FB0}{d}} \, {\color{#F08FB0}{\ln}} \Omega\)</span></span>
+                        <span class="frac-den"><span class="var">\({\color{#F08FB0}{d}} E\)</span></span>
+                    </span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\({\color{#F08FB0}{d}} \, {\color{#F08FB0}{\ln}} \Omega'\)</span></span>
+                        <span class="frac-den"><span class="var">\({\color{#F08FB0}{d}} E'\)</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Using the Boltzmann relation \(S = k \ln \Omega\), we express the derivatives in terms of entropy:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Boltzmann entropy</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S = k {\color{#F08FB0}{\ln}} \Omega\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Logarithm of multiplicity</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\({\color{#F08FB0}{\ln}} \Omega \)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(S\)</span></span>
+                        <span class="frac-den"><span class="var">\(k\)</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Derivative relation</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\({\color{#F08FB0}{d}} \, {\color{#F08FB0}{\ln}} \Omega\)</span></span>
+                        <span class="frac-den"><span class="var">\({\color{#F08FB0}{d}} E\)</span></span>
+                    </span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(1\)</span></span>
+                        <span class="frac-den"><span class="var">\(k\)</span></span>
+                    </span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\({\color{#F08FB0}{d}} S\)</span></span>
+                        <span class="frac-den"><span class="var">\({\color{#F08FB0}{d}} E\)</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                The equilibrium condition \(\frac{d \ln \Omega}{dE} = \frac{d \ln \Omega'}{dE'}\) therefore implies:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equality of entropy derivatives</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\({\color{#F08FB0}{d}} S\)</span></span>
+                        <span class="frac-den"><span class="var">\({\color{#F08FB0}{d}} E\)</span></span>
+                    </span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\({\color{#F08FB0}{d}} S'\)</span></span>
+                        <span class="frac-den"><span class="var">\({\color{#F08FB0}{d}} E'\)</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                This common derivative defines the inverse temperature \(\beta\):
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Definition of \(\beta\)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\beta\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(1\)</span></span>
+                        <span class="frac-den"><span class="var">\(kT\)</span></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                In thermal equilibrium, the \(\beta\) parameters of the two systems become equal:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equilibrium condition for \(\beta\)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\beta\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\beta'\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Equality of temperatures</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(1\)</span></span>
+                        <span class="frac-den"><span class="var">\(kT\)</span></span>
+                    </span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num"><span class="var">\(1\)</span></span>
+                        <span class="frac-den"><span class="var">\(kT'\)</span></span>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="formula-card">
+                <div class="formula-label">✦ Equality of temperatures</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(T\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(T'\)</span>
+                </div>
+            </div>
+
+            <ul>
+                <li class="no-num">Origin of temperature: naturally emerges from the way the number of accessible microstates changes with respect to \(E\).</li>
+                <li class="no-num">\(\beta\) measures how rapidly the number of accessible microstates increases with \(E\).</li>
+                <li class="no-num">Larger entropy corresponds to larger multiplicity.</li>
+                <li class="no-num">Two systems are in thermal equilibrium when \(\beta = \beta'\) and \(T = T'\).</li>
+                <li class="no-num">The equilibrium state is the one of maximum entropy.</li>
+            </ul>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Total entropy</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S_{\text{total}}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(S\)</span>
+                    <span class="op">\(+\)</span>
+                     <span class="var">\(S'\)</span>
+                </div>
+            </div>
 
 	        <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/topic.js"></script>
             <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/navigation.js"></script>
