@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Interaction between two macroscopic systems · Thermodynamics and Statistical Physics For Nanosystems · Nano Library</title>
+    <title>Interaction Between Two Macroscopic Systems · Thermodynamics and Statistical Physics For Nanosystems · Nano Library</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
@@ -68,7 +68,234 @@
     	<div class="content-body">
 
 			<div class="intro-card">
-				✨ 
+                When two macroscopic systems are brought into contact, they can exchange energy in the form of heat, work, or matter. These interactions define the fundamental processes that thermodynamics and statistical physics seek to describe and quantify.
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Example: Two isolated systems brought into contact</h2>
+            </div>
+
+            <div class="intro-card">
+                Consider two systems \(A\) and \(A'\) initially isolated from each other, with no energy exchange. Let \(A^*\) denote the total system, with \((A, E, \Omega(E))\) and \((A', E', \Omega(E'))\), where \(E\) and \(E'\) are constants.
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Total energy (isolated)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(E^*\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(E + E'\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Total number of microstates (isolated)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Omega^*(E^*)\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\Omega(E) \cdot \Omega'(E')\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                When the isolating constraint is removed — allowing energy exchange between \(A\) and \(A'\) — the individual energies \(E\) and \(E'\) are no longer constant, but the total energy remains fixed.
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Total energy (in contact)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(E^*\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(E + E'\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Energy of \(A'\) in terms of total</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(E'\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(E^* - E\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Total microstates as a function of \(E\)</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Omega^*(E)\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\Omega(E) \cdot \Omega'(E^* - E)\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Sum over all possible energy partitions</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Omega^*_f\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\displaystyle\sum_E \Omega(E) \, \Omega'(E^* - E)\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Irreversible increase in microstates</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Omega^*_f \ggg \Omega^*_i\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Corresponding entropy increase</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(S^*_f \ggg S^*_i\)</span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Thermal Interaction</h2>
+            </div>
+
+            <div class="intro-card">
+                External parameters are held constant, so the energy levels of each system remain unchanged. Only heat is exchanged.
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Conservation of average energy</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\overline{E_i} + \overline{E'_i}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\overline{E_f} + \overline{E'_f}\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Change in average energy</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\overline{\Delta E_i} + \overline{\Delta E'_i}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(0\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Heat exchange</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\overline{\Delta E} = Q,\quad \overline{\Delta E'} = Q'\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Total heat conservation</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(Q + Q' = 0\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Heat lost equals heat gained</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(Q = -Q'\)</span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number blue">6.2</div>
+                <h2>Adiabatic Interaction</h2>
+            </div>
+
+            <div class="intro-card">
+                Systems \(A\) and \(A'\) are separated by an insulating material or placed far apart so that no heat flows (\(Q = 0\)). However, external parameters (e.g., volume, piston position) may change, allowing macroscopic work to be done.
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ No heat exchange</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(Q = 0\)</span>
+                </div>
+            </div>
+
+            <ul>
+                <li>\(A\) and \(A'\) change to \(B\) and \(B'\).</li>
+                <li>Change in volume.</li>
+                <li>Moving a piston.</li>
+            </ul>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Energy change equals work done</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\Delta E = W\)</span>
+                </div>
+            </div>
+
+            <div class="where-block blue">
+                <div class="where-label">where</div>
+                <div class="where-term">
+                    <span class="term-sym">\(W\)</span>
+                    <span class="term-sep">-</span>
+                    <span class="term-desc">macroscopic work done</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Conservation of total energy change</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\overline{\Delta E_i} + \overline{\Delta E'_i} = 0\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Work conservation</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(W + W' = 0\)</span>
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number blue">6.2</div>
+                <h2>Combined Thermal and Adiabatic Interaction</h2>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ First Law of Thermodynamics (system \(A\))</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\overline{\Delta E} = Q + W\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ First Law of Thermodynamics (system \(A'\))</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\overline{\Delta E'} = Q' + W'\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Isolated total system</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\overline{\Delta E_i} + \overline{\Delta E'_i} = 0\)</span>
+                </div>
             </div>
 
             <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/topic.js"></script>
