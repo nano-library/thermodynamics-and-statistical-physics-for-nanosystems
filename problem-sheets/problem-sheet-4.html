@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Problem Sheet 4 · Thermodynamics and Statistical Physics For Nanosystems · Nano Library</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="https://nano-library.github.io/web-styling/favicon.png">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+	<link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/colors.css">
+    <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/topic.css">
+    <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/navigation.css">
+    <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/progress.css">
+    <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/divider.css">
+    <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/card.css">
+    <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/list.css">
+    <link rel="stylesheet" href="https://nano-library.github.io/web-styling/css/problem.css">
+</head>
+<body>
+    <a class="nav-button nav-prev">
+        <span class="button-icon"><</span>
+        <span class="button-label">prev</span>
+    </a>
+
+    <a class="nav-button nav-list">
+    <span class="button-label">contents</span>
+    </a>
+
+    <a class="nav-button nav-next">
+        <span class="button-icon">></span>
+        <span class="button-label">next</span>
+    </a>
+
+    <main data-topic="7" data-list="../index.html">
+
+         <div class="page-header">
+            <div class="topic-chip"></div>
+            <h1></h1>
+            <p class="page-meta"></p>
+            <div class="progress-bar-wrap">
+            <div class="progress-label">
+                <span class="topic-count">loading…</span>
+                <span class="pct-count"></span>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-label" style="margin-top:10px;">
+                <span class="chapter-count">loading…</span>
+                <span class="chapter-pct"></span>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill progress-fill-chapter"></div>
+            </div>
+            </div>
+        </div>
+
+		<div class="divider">
+			<span class="divider-line"></span>
+			<span class="divider-flower">✦</span>
+			<span class="divider-flower">❀</span>
+			<span class="divider-flower">✦</span>
+			<span class="divider-line"></span>
+		</div>
+
+    	<div class="content-body">
+            
+            <div class="problem">
+                <div class="problem-header">
+                    <span class="problem-icon">✦</span>
+                    <span class="problem-title">Problem 1</span>
+                    <span class="problem-sub">quantum harmonic oscillator</span>
+                </div>
+                    <div class="problem-body">
+                        <div class="problem-block problem-section">
+                            <div class="block-label">Problem</div>
+                            <div class="block-content">
+                                <p>A single particle is confined in a one-dimensional quantum harmonic oscillator potential and is in thermal equilibrium with a heat reservoir at temperature \(T\).</p>
+                                <div class="problem-part"><strong>(a)</strong> Write down the canonical partition function \(Z\).</div>
+                                <div class="problem-part"><strong>(b)</strong> Calculate the mean energy \(E\).</div>
+                                <div class="problem-part"><strong>(c)</strong> Find the limiting value of \(E\) for \(kT \gg \hbar\omega\).</div>
+                            </div>
+                        </div>
+                <div class="problem-block solution-section">
+                    <div class="block-label">Solution</div>
+                        <div class="block-content">
+                            <div class="solution-part">
+                            <strong>(a) Partition function</strong> <br>
+                            Energy levels \(E_n = \hbar\omega\left(n+\frac{1}{2}\right)\), \(n=0,1,2,\dots\)<br>
+                            \[
+                                Z = \sum_{n=0}^{\infty} e^{-\beta E_n} 
+                            \]
+                            \[
+                                Z = e^{-\beta\hbar\omega/2} \sum_{n=0}^{\infty} \left(e^{-\beta\hbar\omega}\right)^n
+                            \]
+                            \[
+                                Z = \frac{e^{-\beta\hbar\omega/2}}{1 - e^{-\beta\hbar\omega}} 
+                            \]
+                            \[
+                                Z = \frac{1}{2\sinh \left(\frac{\beta\hbar\omega}{2} \right)}.
+                            \]
+                            </div>
+                            <div class="solution-part">
+                            <strong>(b) Mean energy</strong><br>
+                            \[
+                                E = -\frac{\partial \ln Z}{\partial\beta}
+                            \]
+                            \[
+                                E = \frac{\hbar\omega}{2} + \frac{\hbar\omega}{e^{\beta\hbar\omega}-1}.
+                            \]
+                            </div>
+                            <div class="solution-part">
+                            <strong>(c)High-temperature limit (\(kT \gg \hbar\omega\))</strong> <br>
+                            <p>For \(\beta\hbar\omega \ll 1\):</p>
+                            \[
+                                e^{\beta\hbar\omega}-1 \approx \beta\hbar\omega
+                            \]
+                            <p>Then,</p>
+                            \[
+                                E \approx \frac{\hbar\omega}{2} + \frac{1}{\beta}
+                            \]
+                            \[
+                                E = \frac{\hbar\omega}{2} + kT 
+                            \]
+                            \[
+                                E \approx kT.
+                            \]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <span class="problem-icon">✦</span>
+                    <span class="problem-title">Problem 2</span>
+                    <span class="problem-sub">half-spin & work</span>
+                </div>
+                <div class="problem-body">
+                    <div class="problem-block problem-section">
+                        <div class="block-label">Problem</div>
+                        <div class="block-content">
+                            <p>A spin-\(\frac{1}{2}\) system with magnetic moment \(\mu_0\) is placed in a magnetic field \(B\). Initially, the probabilities are </p>
+                            \[
+                                P_+ = 0.9,\; P_- = 0.1
+                            \] 
+                            <p>The system is thermally insulated, and the field is suddenly changed from \(B\) to \(B_0\). After the change,</p>                            
+                            \[
+                                P_+ = 0.7,\; P_- = 0.3
+                            \]
+                            <div class="problem-part"><strong>(a)</strong> Calculate the initial and final mean energies.</div>
+                            <div class="problem-part"><strong>(b)</strong> Determine the work done on the system.</div>
+                        </div>
+                    </div>
+                    <div class="problem-block solution-section">
+                        <div class="block-label">Solution</div>
+                        <div class="block-content">
+                            <div class="solution-part">
+                                <strong>(a)Mean energies</strong> <br>
+                                Energy eigenvalues: 
+                                \[
+                                    E_+ = -\mu_0 B 
+                                \]
+                                \[
+                                    E_- = +\mu_0 B
+                                \]
+                                Initial: 
+                                \[
+                                    \langle E_i \rangle = P_+(-\mu_0 B) + P_-(\mu_0 B)
+                                \]
+                                \[
+                                    \langle E_i \rangle = 0.9(-\mu_0 B) + 0.1(\mu_0 B)
+                                \]
+                                \[
+                                    \langle E_i \rangle = -0.8\,\mu_0 B
+                                \]
+                                Final: 
+                                \[
+                                    \langle E_f \rangle = 0.7(-\mu_0 B_0) + 0.3(\mu_0 B_0)
+                                \]
+                                \[
+                                    \langle E_f \rangle = -0.4\,\mu_0 B_0
+                                \]
+                            </div>
+                            <div class="solution-part">
+                                <strong>(b) Work done</strong><br>
+                                Since the process is sudden (thermally insulated, no heat exchange), the work done equals the change in internal energy:.<br>
+                                \[
+                                    W = \langle E_f \rangle - \langle E_i \rangle
+                                \]
+                                <p>Then,</p>
+                                \[
+                                    W = (-0.4\,\mu_0 B_0) - (-0.8\,\mu_0 B)
+                                \]
+                                \[
+                                    W = 0.8\,\mu_0 B - 0.4\,\mu_0 B_0.
+                                \]
+                                \[
+                                    W = 0.4 \mu_0 (B-B_0)
+                                \]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <span class="problem-icon">✦</span>
+                    <span class="problem-title">Problem 3</span>
+                    <span class="problem-sub">Gibbs paradox</span>
+                </div>
+                <div class="problem-body">
+                    <div class="problem-block problem-section">
+                    <div class="block-label">Problem</div>
+                    <div class="block-content">
+                        <p>For a classical ideal gas of \(N\) identical particles, the canonical partition function is \(Z = (Z_1)^N\) with \(Z_1 \propto V / \beta^{3/2}\).</p>
+                        <div class="problem-part"><strong>(a)</strong> Show that the entropy is not extensive when the volume \(V\) and number of particles \(N\) are halved.</div>
+                        <div class="problem-part"><strong>(b)</strong> Explain Gibbs' paradox and how it is resolved.</div>
+                    </div>
+                    </div>
+                    <div class="problem-block solution-section">
+                    <div class="block-label">Solution</div>
+                    <div class="block-content">
+                        <div class="solution-part">
+                        <strong>(a) Non-extensivity without the \(1/N!\) factor</strong><br>
+                            <p>
+                                The given partition function is \(Z = (Z_1)^N\) with \(Z_1 = c\, V / \beta^{3/2}\) (where \(c\) is a constant).  <br>
+                                Using the thermodynamic relation \(S = k \bigl( \ln Z + \beta \langle E \rangle \bigr)\), we first compute \(\langle E \rangle = -\frac{\partial}{\partial\beta} \ln Z\).
+                            </p>
+                            \[
+                                \ln Z = N \ln Z_1 = N \left( \ln V - \frac{3}{2}\ln\beta + \ln c \right)
+                            \]
+                            \[
+                                \langle E \rangle = -\frac{\partial}{\partial\beta} \ln Z = N \cdot \frac{3}{2\beta} = \frac{3}{2} N k T
+                            \]
+                            Then
+                            \[
+                                S = k \left[ N \left( \ln V - \frac{3}{2}\ln\beta + \ln c \right) + \beta \cdot \frac{3}{2} N k T \right]
+                            \]
+                            \[
+                                S = Nk \left( \ln V - \frac{3}{2}\ln\beta + \ln c + \frac{3}{2} \right)
+                            \]
+                            Since \(\beta = 1/(kT)\), the term \(-\frac{3}{2}\ln\beta = \frac{3}{2}\ln(kT)\). Thus
+                            \[
+                            S = Nk \left( \ln V + \frac{3}{2}\ln T + \text{const} \right)
+                            \]
+                            <p>
+                                The key point: \(S\) contains a term \(Nk \ln V\).  
+                                Now halve both \(V \to V/2\) and \(N \to N/2\). The entropy of the halved system is
+                            </p>
+                            \[
+                            S' = \frac{N}{2}k \left( \ln(V/2) + \frac{3}{2}\ln T + \text{const} \right)
+                            \]
+                            <p>If entropy were extensive, we would have \(S = 2S'\). But</p>
+                            \[
+                                2S' = Nk \left( \ln(V/2) + \frac{3}{2}\ln T + \text{const} \right)
+                            \]
+                            \[
+                                2S' = Nk \left( \ln V - \ln 2 + \frac{3}{2}\ln T + \text{const} \right)
+                            \]
+                            <p>Comparing with \(S = Nk \left( \ln V + \frac{3}{2}\ln T + \text{const} \right)\), we see</p>
+                            \[
+                                2S' = S - Nk \ln 2 \quad \Rightarrow \quad S \neq 2S'
+                            \]
+                            <p>The entropy is not extensive by an amount \(Nk \ln 2\).</p>
+                        </div>
+                        <div class="solution-part">
+                        <strong>(b) Gibbs paradox and its resolution</strong><br>
+                            Gibbs paradox: When two identical ideal gases at the same temperature and pressure are mixed, classical statistical mechanics (without correct counting) predicts an entropy increase \(\Delta S = Nk \ln 2\) even if the gases are indistinguishable. This contradicts the fact that mixing identical substances should produce no entropy change.<br>
+                            The resolution is to divide the partition function by \(N!\) (correct Boltzmann counting), which accounts for the indistinguishability of particles. The correct canonical partition function is
+                            \[
+                            Z = \frac{1}{N!} \left( \frac{V}{\lambda^3} \right)^N
+                            \]
+                            where \(\lambda\) is the thermal de Broglie wavelength. Using \(S = k(\ln Z + \beta\langle E\rangle)\) with this \(Z\) gives
+                            \[
+                            S = Nk \left[ \ln\left( \frac{V}{N\lambda^3} \right) + \frac{5}{2} \right]
+                            \]
+                            which is extensive (each term scales with \(N\)). The mixing entropy for identical gases becomes zero, resolving the paradox.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+  
+            <div class="problem">
+                <div class="problem-header">
+                    <span class="problem-icon">✦</span>
+                    <span class="problem-title">Problem 4</span>
+                    <span class="problem-sub">thermal de Broglie wavelength & grand canonical ensemble</span>
+                </div>
+                <div class="problem-body">
+                    <div class="problem-block problem-section">
+                    <div class="block-label">Problem</div>
+                    <div class="block-content">
+                        <div class="problem-part"><strong>(a)</strong> Define the thermal de Broglie wavelength and, by comparing it with the mean interparticle spacing, obtain the condition for the validity of classical statistics.</div>
+                        <div class="problem-part"><strong>(b)</strong> What is a grand canonical ensemble? Obtain the expression for the probability of a microstate and hence define the grand canonical partition function.</div>
+                    </div>
+                    </div>
+                    <div class="problem-block solution-section">
+                        <div class="block-label">Solution</div>
+                        <div class="block-content">
+                            <div class="solution-part">
+                                <strong>(a) Thermal de Broglie wavelength & classical condition</strong><br>
+                                <p>The thermal de Broglie wavelength is defined as</p>
+                                \[
+                                    \lambda_{\text{th}} = \frac{h}{\sqrt{2\pi m kT}} = \frac{h}{p_{\text{thermal}}},
+                                \]
+                                <p>
+                                    where \(h\) is Planck's constant, \(m\) the particle mass, \(k\) Boltzmann's constant, and \(T\) the temperature. 
+                                    It represents the typical quantum wavelength of a particle with thermal momentum \(\sqrt{2\pi m kT}\).<br>
+                                </p>
+                                <p>
+                                    The mean interparticle spacing is \(d = (V/N)^{1/3} = n^{-1/3}\), where \(n = N/V\) is the number density.<br>
+                                    Classical statistics (Maxwell-Boltzmann) is valid when quantum effects are negligible, i.e., when the thermal wavelength is much smaller than the average distance between particles:
+                                </p>
+                                \[
+                                    \lambda_{\text{th}} \ll d \quad\Rightarrow\quad \frac{h}{\sqrt{2\pi m kT}} \ll n^{-1/3}.
+                                \]
+                                <p>Squaring and rearranging gives the condition</p>
+                                \[
+                                    n\,\lambda_{\text{th}}^3 \ll 1.
+                                \]
+                                <p>
+                                    The quantity \(n\lambda_{\text{th}}^3\) is the quantum concentration; when it is \(\ll 1\), the gas is dilute and hot enough to obey classical statistics.
+                                </p>
+                            </div>
+                            <div class="solution-part">
+                                <strong>(b) Grand canonical ensemble</strong><br>
+                                <p>
+                                    The grand canonical ensemble describes an open system in thermal and chemical equilibrium with a reservoir. The system can exchange both energy and particles with the reservoir, so its temperature \(T\) and chemical potential \(\mu\) are fixed.<br>
+                                    The probability of finding the system in a particular microstate \(s\) with energy \(E_s\) and particle number \(N_s\) is given by
+                                </p>
+                                \[
+                                    P_s = \frac{1}{\mathcal{Z}} \, e^{-\beta(E_s - \mu N_s)},
+                                    \qquad \beta = \frac{1}{kT}.
+                                \]
+                                <p>The normalization factor \(\mathcal{Z}\) is the grand canonical partition function (or grand sum):</p>
+                                \[
+                                    \mathcal{Z} = \sum_{s} e^{-\beta(E_s - \mu N_s)} = \sum_{N=0}^{\infty} \sum_{\{s \text{ with } N_s=N\}} e^{-\beta(E_s - \mu N)}.
+                                \]
+                                \[
+                                    \mathcal{Z} = \sum_{N=0}^{\infty} \sum_{\{s \text{ with } N_s=N\}} e^{-\beta(E_s - \mu N)}.
+                                \]
+                                Equivalently,
+                                \[
+                                    \mathcal{Z} = \sum_{N=0}^{\infty} e^{\beta\mu N} Z_N,
+                                \]
+                                <p>
+                                    where \(Z_N\) is the canonical partition function for \(N\) particles. The grand potential is \(\Phi = -kT \ln \mathcal{Z}\), and average quantities follow from derivatives.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+			
+
+            <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/topic.js"></script>
+            <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/navigation.js"></script>
+        </div>
+  	</main>
+
+  	<footer>
+		tended with love &amp; good tea &nbsp;✦&nbsp; Nano library
+	</footer>
+</body>
+</html>
