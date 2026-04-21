@@ -72,15 +72,39 @@
             </div>
 
             <div class="intro-card">
-                Let \(E\), \(E'\) and \(E^*\) be the energies of systems \(A\), \(A'\) and the total system \(A^*\), respectively.
+                Let \(E\), \(E'\) and \(E^*\) be the energies of systems \(A\), \(A^{'}\) and the total system \(A^{*}\), respectively.
             </div>
 
             <div class="intro-card">
-                Let \(N\), \(N'\) and \(N^*\) be the number of particles in systems \(A\), \(A'\) and \(A^*\), respectively.
+                Let \(N\), \(N'\) and \(N^*\) be the number of particles in systems \(A\), \(A^{'}\) and \(A^{*}\), respectively.
             </div>
 
             <div class="intro-card">
                 Let \(E_r\) and \(N_r\) be the energy and number of particles of the \(r^{\text{th}}\) microstate of system \(A\).
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Energy of the combined system</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(E\)</span>
+                    <span class="op">\(+\)</span>
+                    <span class="var">\(E^{'}\)</span>
+                    <span class="op">\(=)</span>
+                    <span class="var">\(E^{*}\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Energy of the combined system</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(N\)</span>
+                    <span class="op">\(+\)</span>
+                    <span class="var">\(N^{'}\)</span>
+                    <span class="op">\(=)</span>
+                    <span class="var">\(N^{*}\)</span>
+                </div>
             </div>
 
             <div class="formula-card">
@@ -108,18 +132,56 @@
             </div>
 
             <div class="formula-card">
+                <div class="formula-label">Probability proportional to multiplicity</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(\Omega^{'}(E^{'}, N^{'})\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
                 <div class="formula-label">Probability proportional to reservoir multiplicity</div>
                 <div class="formula-number">✦ </div>
                 <div class="formula">
                     <span class="var">\(P_r\)</span>
                     <span class="op">\(\propto\)</span>
-                    <span class="var">\(\Omega'(E^* - E_r,\, N^* - N_r)\)</span>
+                    <span class="var">\(\Omega^{'}(E^* - E_r,\, N^* - N_r)\)</span>
                 </div>
+            </div>
+
+            <div class="intro-card">
+                System is in \(r^{\text{th}}\) with \(E = E_r\) and \(N = N_r\)
             </div>
 
             <div class="intro-card">
                 Expanding the logarithm of \(\Omega'\) to first order and using the definitions \(\beta = 1/(kT)\) and \(\alpha = -\mu/(kT)\), we obtain:
             </div>
+
+            \[
+                \ln(\Omega^{'} (E^{'}, N^{'})) = \ln(\Omega^{'}(E^{*} - E_r, N^{*} - N_r))
+            \]
+
+            \[
+                \ln(\Omega^{'}(E^{*}, N^{*})) \approx \ln(\Omega^{'}(E^{*}, N^{*})) - \left(\frac{\partial \ln \Omega^{'}}{\partial E^{'}}\right) E_r - \left(\frac{\partial \ln \Omega^{'}}{\partial N^{'}}\right)N_r
+            \]
+
+            \[
+                \Omega^{'} \approx e^{\ln(\Omega^{'} (E^{*}, N^{*}))} \times e^{- \left(\frac{\partial \ln \Omega^{'}}{\partial E^{'}}\right) E_r - \left(\frac{\partial \ln \Omega^{'}}{\partial N^{'}}\right)N_r}
+            \]
+
+            \[
+                \Omega^{'} (E^{'}, N^{'}) \approx \Omega^{'}(E^{*}, N^{*}) \times e^{-\beta E_r - \alpha N_r} 
+            \]
+
+            \[
+                \Omega^{'} (E^{'}, N^{'}) = \text{ constant } \cdot e^{-\beta (E_r - \mu N_r)} 
+            \]
+
+            \[
+                \text{ where } \alpha = -\frac{\mu}{kT}
+            \]
 
             <div class="formula-card">
                 <div class="formula-label">Exponential form</div>
@@ -164,6 +226,39 @@
                     <span class="var">\(e^{-\beta(E_r - \mu N_r)}\)</span>
                 </div>
             </div>
+
+            <div class="where-block blue">
+                <div class="where-label">where</div>
+                <div class="where-term">
+                    <span class="term-sym">\(\beta = \dfrac{1}{kT} = \frac{\partial \Omega^{'}}{\partial E^{'}}\)</span>
+                    <span class="term-sep">,</span>
+                    <span class="term-desc">inverse temperature</span>
+                </div>
+                <div class="where-term">
+                    <span class="term-sym">\(\mu = -\alpha k T = \frac{\partial \Omega^{'}}{\partial N^{'}}\)</span>
+                    <span class="term-sep">,</span>
+                    <span class="term-desc">chemical potential scaled</span>
+                </div>
+            </div>
+
+            From Thermodynamics
+            \[  
+                dU = TdS - PdV + \mu dN
+            \]
+
+            \[
+                \mu = -\left(\frac{dU}{dN}\right)_{S, V}
+            \]
+
+            Partition function
+            \[
+                Z = \displaystyle\sum_r e^{-\beta (E_r - \mu N_r)}
+            \]
+
+            \[
+                P_r = \frac{1}{Z} e^{-beta (E_r - \mu N_r)}
+            \]
+        
 
             <div class="intro-card">
                 The grand canonical partition function is the normalization factor, summing over all possible states with different energies and particle numbers:
