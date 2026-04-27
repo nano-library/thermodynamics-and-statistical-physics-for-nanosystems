@@ -235,9 +235,126 @@
                     </div>
                 </div>
             </div>
-  
 
+            <div class="problem">
+                <div class="problem-header">
+                    <span class="problem-icon">✦</span>
+                    <span class="problem-title">Problem 1</span>
+                    <span class="problem-sub">probability with velocity distribution of the molecule</span>
+                </div>
+                <div class="problem-body">
+                    <div class="problem-block problem-section">
+                    <div class="block-label">Problem</div>
+                    <div class="block-content">
+                        Consider a system consists of two particles each of which can occupy one of the 3 quantum states with energies \(0\), \(E\), \(3E\).
+                        The system is in contact with a heat reservoir at the temperature \(T\), where \(\beta = \frac{1}{kT}\).
+                        <div class="problem-parts">
+                            <div class="problem-part">
+                                <span class="part-label">a</span>
+                                <span class="part-content">
+                                    Write an expression for the partition if the particles are distinguishable
+                                </span>
+                            </div>
+                            <div class="problem-part">
+                                <span class="part-label">a</span>
+                                <span class="part-content">
+                                    Write an expression for the partition if the particles are indistinguishable, Bose-Einstein distribution
+                                </span>
+                            </div>
+                            <div class="problem-part">
+                                <span class="part-label">a</span>
+                                <span class="part-content">
+                                    Write an expression for the partition if the particles are indistinguishable, Fermi-Dirac distribution
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="problem-block solution-section">
+                        <div class="block-label">Solution</div>
+                            <div class="block-content">
+                                <div class="solution-part">
+                                    \[
+                                        Z = \displaystyle\sum_r e^{-\beta E_r}
+                                    \]
 
+                                    For 1st particle,
+                                    \[
+                                        Z_1 = 1 + e^{-\beta E} + e^{-\beta 3E}
+                                    \]
+
+                                    For 2nt particle,
+                                    \[
+                                        Z_2 = 1 + e^{-\beta E} + e^{-\beta 3E}
+                                    \]
+
+                                    Total partition function
+                                    \[
+                                        Z = Z_1 \cdot Z_2
+                                    \]
+                                    \[
+                                        Z = \left(1 + e^{-\beta E} + e^{-\beta 3E}\right)^2
+                                    \]
+                                </div>  
+                                <div class="solution-part">
+                                    <p>Let \(n_0\) be occupation number of energy level \(\epsilon_0 = 0\)</p>
+                                    <p>Let \(n_1\) be occupation number of energy level \(\epsilon_1 = 0\)</p>
+                                    <p>Let \(n_2\) be occupation number of energy level \(\epsilon_2 = 3E\)</p>
+
+                                    \[
+                                        \displaystyle \sum_R = N
+                                    \]
+
+                                    \[
+                                        n_0 + n_1 + n_2 = 2
+                                    \]
+
+                                    (2, 0, 0), (0, 2, 0), (0, 0, 2)
+                                    (1, 1, 0), (1, 0, 1), (0, 1, 1)
+
+                                    Total Energy
+                                    2(0) + 0(E) + 0(3E) = 0
+                                    0(0) + 2(E) + 0(3E) = 2E
+                                    0(0) + 0(E) + 2(3E) = 6E
+                                    1(0) + 1(E) + 0(3E) = E
+                                    1(0) + 0(E) + 1(3E) = 3E
+                                    0(0) + 1(E) + 1(3E) = 4E
+                                    
+                                    \[
+                                        \small
+                                        Z_{\text{BE}} = e^{-\beta (0)} +  e^{-\beta (E)} + e^{-\beta (2E)} + e^{-\beta (3E)} + e^{-\beta (4E)} + e^{-\beta (6E)}
+                                    \]
+                                </div>  
+                                <div class="solution-part">
+                                    <p>Let \(n_0\) be occupation number of energy level \(\epsilon_0 = 0\)</p>
+                                    <p>Let \(n_1\) be occupation number of energy level \(\epsilon_1 = 0\)</p>
+                                    <p>Let \(n_2\) be occupation number of energy level \(\epsilon_2 = 3E\)</p>
+
+                                    \[
+                                        \displaystyle \sum_R = N
+                                    \]
+
+                                    \[
+                                        n_0 + n_1 + n_2 = 2
+                                    \]
+
+                                    (1, 1, 0), (1, 0, 1), (0, 1, 1)
+
+                                    Total Energy
+                                    1(0) + 1(E) + 0(3E) = E
+                                    1(0) + 0(E) + 1(3E) = 3E
+                                    0(0) + 1(E) + 1(3E) = 4E
+                                    
+                                    \[
+                                        \small
+                                        Z_{\text{BE}} =  e^{-\beta (0)} +  e^{-\beta (3E)} +  e^{-\beta (4E)}
+                                    \]
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 	        <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/topic.js"></script>
             <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/navigation.js"></script>
