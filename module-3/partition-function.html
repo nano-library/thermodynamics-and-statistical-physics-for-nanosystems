@@ -77,7 +77,7 @@
                 Let there be energy and momentum exchange between system \(A\) and reservoir \(A^{'}\)
             </div>
 
-             <div class="formula-card">
+            <div class="formula-card">
                 <div class="formula-label">Total Energy</div>
                 <div class="formula-number">✦ </div>
                 <div class="formula">
@@ -119,23 +119,49 @@
                 when system is in \(r^{\text{th}}\) state.
             </div>
 
-            Energy (total)
-            \[
-                \epsilon_r + \epsilon^{'} = \epsilon^{*}
-            \]
+            <div class="formula-card">
+                <div class="formula-label">Total Energy</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\epsilon_r\)</span>
+                    <span class="op">\(+\)</span>
+                    <span class="var">\(\epsilon^{'}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\epsilon^{*}\)</span>
+                </div>
+            </div>
 
-            momentum
-            \[
-                P_r + P^{'} = P^{*}
-            \]
+            <div class="formula-card">
+                <div class="formula-label">Total Momentum</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(+\)</span>
+                    <span class="var">\(P^{'}\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(P^{*}\)</span>
+                </div>
+            </div>
 
-            \[
-                P_r \propto \Omega^{'}(E^{'}) 
-            \]
+            <div class="formula-card">
+                <div class="formula-label"></div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(\Omega^{'}(E^{'})\)</span>
+                </div>
+            </div>
 
-            \[
-                P_r \propto e^{-\beta(\epsilon_r - V^{*}\cdot P_r)}
-            \]
+            <div class="formula-card">
+                <div class="formula-label"></div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(e^{-\beta\left(\epsilon_r - V^{*}\cdot P_r\right)}\)</span>
+                </div>
+            </div>
 
             <div class="where-block blue">
                 <div class="where-label">where</div>
@@ -156,84 +182,56 @@
                 </div>
             </div>
 
-            \[
-                \mathrm{Z} = \displaystyle\sum_r e^{-\beta(\epsilon_r - V^{*} \cdot P_r)}
-            \]
+            <div class="formula-card">
+                <div class="formula-label"></div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\mathrm{Z} \)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="op">\(\displaystyle\sum_r\)</span>
+                    <span class="var">\(e^{-\beta\left(\epsilon_r - V^{*}\cdot P_r\right)}\)</span>
+                </div>
+            </div>
 
             <div class="intro-card">
                 In general, when \(E_n\), \(N\) and \(P\) are exchanged, partition function is
             </div>
 
-            \[
-                P_r \propto e^{-\beta (\epsilon_r - v^{*}P_r - \mu N_r)}
-            \]
-
-            \[
-                P_r = \frac{e^{-\beta (\epsilon_r - v^{*}P_r - \mu N_r)}}{\displaystyle\sum_r e^{-\beta (\epsilon_r - v^{*}P_r - \mu N_r)}}
-            \]
-
-            <div class="problem">
-                <div class="problem-header">
-                    <span class="problem-icon">✦</span>
-                    <span class="problem-title">Problem 1</span>
-                    <span class="problem-sub">probability with velocity distribution of the molecule</span>
+            <div class="formula-card">
+                <div class="formula-label"></div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(\propto\)</span>
+                    <span class="var">\(e^{-\beta\left(\epsilon_r - V^{*}P_r - mu N_r\right)}\)</span>
                 </div>
-                <div class="problem-body">
-                    <div class="problem-block problem-section">
-                    <div class="block-label">Problem</div>
-                    <div class="block-content">
-                        Consider a molecule in a ideal gas system \(A\), which is in contact with reservoir \(A^{'}\) that is moving with constant
-                        velocity \(V_0\). The system can exchange energy and momentum with the reservoir.
-                        Starting from the equilibrium probability distribution
-                        \[
-                            \large
-                            P_r \propto e^{-\beta(\epsilon_r - V_0 \cdot P_r)}
-                        \]
-                        Show that probability with velocity distribution of the molecule is given by 
-                        \[
-                            \large
-                            P(v) \propto e^{-\frac{1}{2}\beta m (v - v_0)^2}
-                        \]
-                    </div>
-                    </div>
-                    <div class="problem-block solution-section">
-                        <div class="block-label">Solution</div>
-                            <div class="block-content">
-                                <div class="solution-part">
-                                    \[
-                                        \epsilon_r = \frac{1}{2}mv_r^2
-                                    \]
-                                    \[
-                                        P_r = mv_r
-                                    \]
+            </div>
 
-                                    \[
-                                        \large
-                                        P_r \propto e^{-\beta \left(\frac{1}{2}mv_r^2 - mv_0 v_r\right)}
-                                    \]
-                                    \[
-                                        \large
-                                        P_r \propto e^{-\beta\left(\frac{1}{2}mv_r^2 - 2 \left(\frac{1}{2}m_r\right)v_0 + \frac{1}{2}mv_0^2 - \frac{1}{2} mv_0^2\right)}
-                                    \]
-
-                                    \[
-                                        P \propto e^{-\frac{1}{2} \beta m \left(v_r - v_0 \right)} \cdot e^{\beta \frac{1}{2} m v_0^2}
-                                    \]
-                                    \[
-                                        P(v_r) \propto \text{ constant } \cdot e^{-\frac{1}{2} m \beta (v_r - v_0)^2}
-                                    \]
-                                    \[
-                                        P(v_r) \propto \text{ constant } \cdot e^{-\beta \left[ \frac{1}{2} m (v_r - v_0)^2 \right]}
-                                    \]
-                                    \[
-                                        P(V_r) \propto e^{-\beta E_r}
-                                    \]
-                                    <p>This is Maxwell-Boltzman velocity distribution function</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="formula-card">
+                <div class="formula-label"></div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(e^{-\beta (\epsilon_r - v^{*}P_r - \mu N_r)}\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="op">\(\displaystyle\sum_r\)</span>
+                            <span class="var">\(e^{-\beta (\epsilon_r - v^{*}P_r - \mu N_r)}\)</span>
+                        </span>
+                    </span>
                 </div>
+            </div>
+
+            
+            <div class="divider">
+                <span class="divider-line"></span>
+                <span class="divider-flower">✦</span>
+                <span class="divider-flower">❀</span>
+                <span class="divider-flower">✦</span>
+                <span class="divider-line"></span>
             </div>
 
             <div class="problem">
@@ -244,113 +242,253 @@
                 </div>
                 <div class="problem-body">
                     <div class="problem-block problem-section">
-                    <div class="block-label">Problem</div>
-                    <div class="block-content">
-                        Consider a system consists of two particles each of which can occupy one of the 3 quantum states with energies \(0\), \(E\), \(3E\).
-                        The system is in contact with a heat reservoir at the temperature \(T\), where \(\beta = \frac{1}{kT}\).
-                        <div class="problem-parts">
-                            <div class="problem-part">
-                                <span class="part-label">a</span>
-                                <span class="part-content">
-                                    Write an expression for the partition if the particles are distinguishable
-                                </span>
-                            </div>
-                            <div class="problem-part">
-                                <span class="part-label">a</span>
-                                <span class="part-content">
-                                    Write an expression for the partition if the particles are indistinguishable, Bose-Einstein distribution
-                                </span>
-                            </div>
-                            <div class="problem-part">
-                                <span class="part-label">a</span>
-                                <span class="part-content">
-                                    Write an expression for the partition if the particles are indistinguishable, Fermi-Dirac distribution
-                                </span>
-                            </div>
+                        <div class="block-label">Problem</div>
+                        <div class="block-content">
+                            Consider a molecule in a ideal gas system \(A\), which is in contact with reservoir \(A^{'}\) that is moving with constant
+                            velocity \(V_0\). The system can exchange energy and momentum with the reservoir.
+                            Starting from the equilibrium probability distribution
+                            \[
+                                P_r \propto e^{-\beta(\epsilon_r - V_0 \cdot P_r)}
+                            \]
+                            Show that probability with velocity distribution of the molecule is given by
+                            \[
+                                P(v) \propto e^{-\frac{1}{2}\beta m (v - v_0)^2}
+                            \]
                         </div>
-                    </div>
                     </div>
                     <div class="problem-block solution-section">
                         <div class="block-label">Solution</div>
-                            <div class="block-content">
-                                <div class="solution-part">
-                                    \[
-                                        Z = \displaystyle\sum_r e^{-\beta E_r}
-                                    \]
-
-                                    For 1st particle,
-                                    \[
-                                        Z_1 = 1 + e^{-\beta E} + e^{-\beta 3E}
-                                    \]
-
-                                    For 2nt particle,
-                                    \[
-                                        Z_2 = 1 + e^{-\beta E} + e^{-\beta 3E}
-                                    \]
-
-                                    Total partition function
-                                    \[
-                                        Z = Z_1 \cdot Z_2
-                                    \]
-                                    \[
-                                        Z = \left(1 + e^{-\beta E} + e^{-\beta 3E}\right)^2
-                                    \]
-                                </div>  
-                                <div class="solution-part">
-                                    <p>Let \(n_0\) be occupation number of energy level \(\epsilon_0 = 0\)</p>
-                                    <p>Let \(n_1\) be occupation number of energy level \(\epsilon_1 = 0\)</p>
-                                    <p>Let \(n_2\) be occupation number of energy level \(\epsilon_2 = 3E\)</p>
-
-                                    \[
-                                        \displaystyle \sum_R = N
-                                    \]
-
-                                    \[
-                                        n_0 + n_1 + n_2 = 2
-                                    \]
-
-                                    (2, 0, 0), (0, 2, 0), (0, 0, 2)
-                                    (1, 1, 0), (1, 0, 1), (0, 1, 1)
-
-                                    Total Energy
-                                    2(0) + 0(E) + 0(3E) = 0
-                                    0(0) + 2(E) + 0(3E) = 2E
-                                    0(0) + 0(E) + 2(3E) = 6E
-                                    1(0) + 1(E) + 0(3E) = E
-                                    1(0) + 0(E) + 1(3E) = 3E
-                                    0(0) + 1(E) + 1(3E) = 4E
-                                    
-                                    \[
-                                        \small
-                                        Z_{\text{BE}} = e^{-\beta (0)} +  e^{-\beta (E)} + e^{-\beta (2E)} + e^{-\beta (3E)} + e^{-\beta (4E)} + e^{-\beta (6E)}
-                                    \]
-                                </div>  
-                                <div class="solution-part">
-                                    <p>Let \(n_0\) be occupation number of energy level \(\epsilon_0 = 0\)</p>
-                                    <p>Let \(n_1\) be occupation number of energy level \(\epsilon_1 = 0\)</p>
-                                    <p>Let \(n_2\) be occupation number of energy level \(\epsilon_2 = 3E\)</p>
-
-                                    \[
-                                        \displaystyle \sum_R = N
-                                    \]
-
-                                    \[
-                                        n_0 + n_1 + n_2 = 2
-                                    \]
-
-                                    (1, 1, 0), (1, 0, 1), (0, 1, 1)
-
-                                    Total Energy
-                                    1(0) + 1(E) + 0(3E) = E
-                                    1(0) + 0(E) + 1(3E) = 3E
-                                    0(0) + 1(E) + 1(3E) = 4E
-                                    
-                                    \[
-                                        \small
-                                        Z_{\text{BE}} =  e^{-\beta (0)} +  e^{-\beta (3E)} +  e^{-\beta (4E)}
-                                    \]
-                                </div>  
+                        <div class="block-content">
+                            <div class="solution-part">
+                                <p>For a single molecule with velocity \(v_r\), the kinetic energy and momentum are:</p>
+                                \[
+                                    \epsilon_r = \frac{1}{2}mv_r^2, \qquad P_r = mv_r
+                                \]
+                                <p>Substituting into the equilibrium distribution:</p>
+                                \[
+                                    P_r \propto e^{-\beta \left(\frac{1}{2}mv_r^2 - mv_0 v_r\right)}
+                                \]
+                                <p>Complete the square in the exponent:</p>
+                                \[
+                                    \begin{align}
+                                        \frac{1}{2}mv_r^2 - mv_0 v_r
+                                        &= \frac{1}{2}m\left(v_r^2 - 2v_0 v_r\right) \\
+                                        &= \frac{1}{2}m\left(v_r - v_0\right)^2 - \frac{1}{2}mv_0^2
+                                    \end{align}
+                                \]
+                                <p>Therefore:</p>
+                                \[
+                                    \begin{align}
+                                        P_r &\propto e^{-\beta\left[\frac{1}{2}m(v_r - v_0)^2 - \frac{1}{2}mv_0^2\right]} \\
+                                        &= e^{-\frac{1}{2}\beta m(v_r - v_0)^2} \cdot e^{+\frac{1}{2}\beta m v_0^2}
+                                    \end{align}
+                                \]
+                                <p>Since \(e^{+\frac{1}{2}\beta m v_0^2}\) is a constant with respect to \(v_r\):</p>
+                                \[
+                                    P(v_r) \propto e^{-\frac{1}{2}\beta m (v_r - v_0)^2}
+                                \]
+                                <p>Therefore:</p>
+                                \[
+                                    P(v_r) \propto e^{-\beta \left[\frac{1}{2} m (v_r - v_0)^2 \right]}
+                                \]
+                                <p>This is the Maxwell-Boltzmann velocity distribution, centered at the reservoir drift velocity \(v_0\).</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <span class="problem-icon">✦</span>
+                    <span class="problem-title">Problem 2</span>
+                    <span class="problem-sub">partition functions</span>
+                </div>
+                <div class="problem-body">
+                    <div class="problem-block problem-section">
+                        <div class="block-label">Problem</div>
+                        <div class="block-content">
+                            Consider a system consists of two particles each of which can occupy one of the 3 quantum states with energies \(0\), \(E\), \(3E\).
+                            The system is in contact with a heat reservoir at the temperature \(T\), where \(\beta = \frac{1}{kT}\).
+                            <div class="problem-parts">
+                                <div class="problem-part">
+                                    <span class="part-label">a</span>
+                                    <span class="part-content">
+                                        Write an expression for the partition if the particles are distinguishable
+                                    </span>
+                                </div>
+                                <div class="problem-part">
+                                    <span class="part-label">b</span>
+                                    <span class="part-content">
+                                        Write an expression for the partition if the particles are indistinguishable. (Bose-Einstein statistics)
+                                    </span>
+                                </div>
+                                <div class="problem-part">
+                                    <span class="part-label">c</span>
+                                    <span class="part-content">
+                                        Write an expression for the partition if the particles are indistinguishable. (Fermi-Dirac statistics)
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="problem-block solution-section">
+                        <div class="block-label">Solution</div>
+                        <div class="block-content">
+
+                            <div class="solution-part">
+                                <p><strong>(a)</strong></p>
+                                <p>The partition function is defined as:</p>
+                                \[
+                                    Z = \sum_r e^{-\beta E_r}
+                                \]
+                                <p>For each distinguishable particle:</p>
+                                \[
+                                    Z_1 = Z_2 = 1 + e^{-\beta E} + e^{-3\beta E}
+                                \]
+                                <p>Since the particles are distinguishable, the total partition function is:</p>
+                                \[
+                                    Z = Z_1 \cdot Z_2
+                                \]
+                                \[
+                                    Z = \left(1 + e^{-\beta E} + e^{-3\beta E}\right)^2
+                                \]
+                            </div>
+
+                            <div class="solution-part">
+                                <p><strong>(b)</strong></p>
+                                <p>Let \(n_0,\, n_1,\, n_2\) be the occupation numbers of energy levels \(\epsilon_0 = 0\), \(\epsilon_1 = E\), \(\epsilon_2 = 3E\) respectively, with the constraint:</p>
+                                \[
+                                    n_0 + n_1 + n_2 = 2
+                                \]
+                                <p>For bosons, multiple occupancy is allowed. The allowed states \((n_0, n_1, n_2)\) and their total energies are:</p>
+                                \[
+                                    \begin{array}{ccc}
+                                        (n_0,\, n_1,\, n_2) & & E_{\text{total}} \\
+                                        \hline
+                                        (2,\, 0,\, 0) & & 0 \\
+                                        (0,\, 2,\, 0) & & 2E \\
+                                        (0,\, 0,\, 2) & & 6E \\
+                                        (1,\, 1,\, 0) & & E \\
+                                        (1,\, 0,\, 1) & & 3E \\
+                                        (0,\, 1,\, 1) & & 4E \\
+                                    \end{array}
+                                \]
+                                \[
+                                    Z_{\text{BE}} = 1 + e^{-\beta E} + e^{-2\beta E} + e^{-3\beta E} + e^{-4\beta E} + e^{-6\beta E}
+                                \]
+                            </div>
+
+                            <div class="solution-part">
+                                <p><strong>(c)</strong></p>
+                                <p>For fermions, the Pauli exclusion principle forbids multiple occupancy (\(n_i \leq 1\)). The allowed states \((n_0, n_1, n_2)\) and their total energies are:</p>
+                                \[
+                                    \begin{array}{ccc}
+                                        (n_0,\, n_1,\, n_2) & & E_{\text{total}} \\
+                                        \hline
+                                        (1,\, 1,\, 0) & & E \\
+                                        (1,\, 0,\, 1) & & 3E \\
+                                        (0,\, 1,\, 1) & & 4E \\
+                                    \end{array}
+                                \]
+                                \[
+                                    Z_{\text{FD}} = e^{-\beta E} + e^{-3\beta E} + e^{-4\beta E}
+                                \]
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="problem">
+                <div class="problem-header">
+                    <span class="problem-icon">✦</span>
+                    <span class="problem-title">Problem 3</span>
+                    <span class="problem-sub">partition functions</span>
+                </div>
+                <div class="problem-body">
+                    <div class="problem-block problem-section">
+                        <div class="block-label">Problem</div>
+                        <div class="block-content">
+                            Consider 3 particles that can occupy 2 energy levels with energies \(0\) and \(E\).
+                            Compute the partition function for Maxwell-Boltzmann, Bose-Einstein, and Fermi-Dirac statistics.
+                            The system is in contact with a heat reservoir at temperature \(T\), where \(\beta = \frac{1}{kT}\).
+                            <div class="problem-parts">
+                                <div class="problem-part">
+                                    <span class="part-label">a</span>
+                                    <span class="part-content">
+                                        Write an expression for the partition function if the particles are distinguishable. (Maxwell-Boltzmann statistics)
+                                    </span>
+                                </div>
+                                <div class="problem-part">
+                                    <span class="part-label">b</span>
+                                    <span class="part-content">
+                                        Write an expression for the partition function if the particles are indistinguishable. (Bose-Einstein statistics)
+                                    </span>
+                                </div>
+                                <div class="problem-part">
+                                    <span class="part-label">c</span>
+                                    <span class="part-content">
+                                        Write an expression for the partition function if the particles are indistinguishable. (Fermi-Dirac statistics)
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="problem-block solution-section">
+                        <div class="block-label">Solution</div>
+                        <div class="block-content">
+
+                            <div class="solution-part">
+                                <p><strong>(a)</strong></p>
+                                <p>The partition function is defined as:</p>
+                                \[
+                                    Z = \sum_r e^{-\beta E_r}
+                                \]
+                                <p>For each distinguishable particle with energy levels \(0\) and \(E\):</p>
+                                \[
+                                    Z_1 = Z_2 = Z_3 = 1 + e^{-\beta E}
+                                \]
+                                <p>Since the particles are distinguishable, the total partition function is:</p>
+                                \[
+                                    Z_{\text{MB}} = Z_1 \cdot Z_2 \cdot Z_3
+                                \]
+                                \[
+                                    Z_{\text{MB}} = \left(1 + e^{-\beta E}\right)^3
+                                \]
+                            </div>
+
+                            <div class="solution-part">
+                                <p><strong>(b)</strong></p>
+                                <p>Let \(n_0,\, n_1\) be the occupation numbers of energy levels \(\epsilon_0 = 0\) and \(\epsilon_1 = E\) respectively, with the constraint:</p>
+                                \[
+                                    n_0 + n_1 = 3
+                                \]
+                                <p>For bosons, multiple occupancy is allowed. The allowed states \((n_0, n_1)\) and their total energies are:</p>
+                                \[
+                                    \begin{array}{ccc}
+                                        (n_0,\, n_1) & & E_{\text{total}} \\
+                                        \hline
+                                        (3,\, 0) & & 0 \\
+                                        (2,\, 1) & & E \\
+                                        (1,\, 2) & & 2E \\
+                                        (0,\, 3) & & 3E \\
+                                    \end{array}
+                                \]
+                                \[
+                                    Z_{\text{BE}} = 1 + e^{-\beta E} + e^{-2\beta E} + e^{-3\beta E}
+                                \]
+                            </div>
+
+                            <div class="solution-part">
+                                <p><strong>(c)</strong></p>
+                                <p>For fermions, the Pauli exclusion principle requires \(n_i \leq 1\). With only 2 energy levels, at most 2 fermions can be accommodated, so it is impossible to distribute 3 fermions across 2 levels.</p>
+                                \[
+                                    Z_{\text{FD}} = 0
+                                \]
+                            </div>
+
                         </div>
                     </div>
                 </div>
