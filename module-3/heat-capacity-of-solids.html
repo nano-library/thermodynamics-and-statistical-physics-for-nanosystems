@@ -67,10 +67,760 @@
 		</div>
 
 		<div class="content-body">
+            
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Einstein's Model: From interacting atoms to normal modes</h2>
+            </div> 
 
             <div class="intro-card">
-				✨ 
-			</div>
+                The hamiltonian of atoms in a crystal lattice, atoms displaced from equilibrium:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label"></div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(r_i\)</span>
+                    <span class="op">\(\rightarrow\)</span>
+                    <span class="var">\(r_i\)</span>
+                    <span class="op">\(+\)</span>
+                    <span class="var">\(\xi_i\)</span>
+                </div>
+            </div>
+
+            <div class="where-block blue">
+                <div class="where-label">where</div>
+                <div class="where-term">
+                    <span class="term-sym">\(\dot{\xi}_i\)</span>
+                    <span class="term-sep"></span>
+                    <span class="term-desc">velocity, \(\left(\frac{\partial \xi_i}{\partial t}\right)\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Total Energy</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(H\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(T\)</span>
+                    <span class="op">\(+\)</span>
+                    <span class="var">\(V\)</span>
+                </div>
+            </div>
+            
+            <div class="where-block blue">
+                <div class="where-label">where</div>
+                <div class="where-term">
+                    <span class="term-sym">\(T\)</span>
+                    <span class="term-sep">\(=\)</span>
+                    <span class="term-desc">\(\frac{1}{2}\displaystyle\sum_i m_i \dot{\xi}^2_i\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label"></div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(T\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(1\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(2\)</span>
+                        </span>
+                    </span>
+                    <span class="op">\(\displaystyle\sum_i\)</span>
+                    <span class="var">\(m_i \xi_i^2\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Expanding potential energy about equilibrium:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label"></div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(V\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(V_0\)</span>
+                    <span class="op">\(+\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(1\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(2\)</span>
+                        </span>
+                    </span>
+                    <span class="op">\(\displaystyle\sum_i\)</span>
+                    <span class="var">\(A_{ij} \xi_i \xi_j\)</span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                Neglecting higher-order terms (harmonic approximation), System of coupled harmonic oscillators after diagonalizing the hamiltonian:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label"></div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(H\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="op">\(\displaystyle\sum_k\)</span>
+                    <span class="var">\(\displaystyle \left(\frac{1}{2}p_k^2 \, {\color{#F08FB0}{+}} \, \frac{1}{2}\omega_k^2 q_k^2 \right)\)</span>
+                </div>
+            </div>
+            
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Lattice Vibrations</h2>
+            </div> 
+
+            <div class="callout def">
+                <div>
+                    <div class="callout-title">Physical System</div>
+                    Atoms arranged in a crystal lattice, and interact via interatomic forces.
+                </div>
+            </div>
+
+            <div class="callout def">
+                <div>
+                    <div class="callout-title">Small Oscillations</div>
+                    Atoms vibrate about equilibrium positions. For small displacements, harmonic approximation.
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label"></div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(U\)</span>
+                    <span class="op">\(\approx\)</span>
+                    <span class="var">\(U_0\)</span>
+                    <span class="op">\(+\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(1\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(2\)</span>
+                        </span>
+                    </span>
+                    <span class="op">\(\displaystyle\sum_i\)</span>
+                    <span class="var">\(K_{ij} q_i q_j\)</span>
+                </div>
+            </div>
+
+            <div class="callout note">
+                <div>
+                    <div class="callout-title">General Result</div>
+                    System has \(3N\) normal modes of vibration. Each mode behaves like a harmonic oscillaton.
+                </div>
+            </div>
+
+             <div class="callout tip">
+                <div>
+                    <div class="callout-title">Einstein's Assumptions</div>
+                    All normal modes have the same frequency: \(\omega = \omega_E\). <br>
+                    Modes are treated as independent.
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Physical Model and Quantum Input</h2>
+            </div> 
+
+            <ul>
+                <li class="no-num">Atoms in a crystal oscillate about equilibrium.</li>
+                <li class="no-num">Each normal mode is an independent quantum harmonic oscillator.</li>
+                <li class="no-num">All oscillators have same frequency \(\omega_E\).</li>
+            </ul>
+
+            <div class="intro-card">
+                A solid can be modeled as a system of (\(3N\)) independent oscillators.
+            </div>
+
+            <div class="intro-card">
+                This is the only quantum input.
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Energy Levels</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\epsilon_n\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\displaystyle \hbar \omega_E \left(n \, {\color{#F08FB0}{+}} \, \frac{1}{2} \right)\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Energy Levels</div>
+                <div class="formula-number">✦ </div>
+                <div class="formula">
+                    <span class="var">\(\beta\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num" style="padding: 0px 16px 3px">
+                            <span class="var">\(1\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(k_BT\)</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Harmonic oscillator partition function</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(Z_1\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="op">\(\displaystyle\sum_{n=0}^\infty\)</span>
+                    <span class="var">\(e^{-\beta \hbar \omega_E (n+1/2)}\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Harmonic oscillator partition function</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(Z_1\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(e^{-\beta \hbar \omega_E / 2}\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(1 - e^{-\beta \hbar \omega_E}\)</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Total partition function</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(Z\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\((Z_1)^{3N}\)</span>
+                </div>
+            </div>
+
+            <ul>
+                <li>Independence, factorization</li>
+                <li>No combinatorics required</li>
+            </ul>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Internal Energy</h2>
+            </div> 
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Energy</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(E\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="op">\(-\)</span>
+                    <span class="frac">
+                    <span class="frac-num">
+                        <span class="var">\(\partial\)</span>
+                    </span>
+                    <span class="frac-den">
+                        <span class="var">\(\partial \beta\)</span>
+                    </span>
+                    </span>
+                    <span class="var">\(\ln Z\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Energy</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(\ln Z\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(3N \ln Z_1\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Energy result</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(E\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(3N\)</span>
+                    <span class="op">\(\Big(\)</span>
+                    <span class="frac">
+                    <span class="frac-num">
+                        <span class="var">\(\hbar \omega_E\)</span>
+                    </span>
+                    <span class="frac-den">
+                        <span class="var">\(2\)</span>
+                    </span>
+                    </span>
+                    <span class="op">\(+\)</span>
+                    <span class="frac">
+                    <span class="frac-num" style="padding: 0px 24px 3px;">
+                        <span class="var">\(\hbar \omega_E\)</span>
+                    </span>
+                    <span class="frac-den">
+                        <span class="var">\(e^{\beta \hbar \omega_E}\)</span>
+                        <span class="op">\(-\)</span>
+                        <span class="var">\(1\)</span>
+                    </span>
+                    </span>
+                    <span class="op">\(\Big)\)</span>
+                </div>
+            </div>
+
+            <ul>
+                <li class="no-num">Zero-point energy: \(\frac{1}{2} \hbar \omega E\)</li>
+                <li class="no-num">Thermal excitation term</li>
+            </ul>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Heat Capacity and Einstein Temperature</h2>
+            </div>
+
+            <div class="intro-card">
+                The Einstein model treats each atom as an independent quantum harmonic oscillator, leading to the following heat capacity.
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Heat capacity definition</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(C_V\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="op">\(\Big(\)</span>
+                    <span class="frac">
+                    <span class="frac-num">
+                        <span class="var">\(\partial E\)</span>
+                    </span>
+                    <span class="frac-den">
+                        <span class="var">\(\partial T\)</span>
+                    </span>
+                    </span>
+                    <span class="op">\(\Big)_{\color{#6AAEE0}{V}}\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Einstein temperature definition</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(\theta_E\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="frac">
+                    <span class="frac-num">
+                        <span class="var">\(\hbar \omega_E\)</span>
+                    </span>
+                    <span class="frac-den">
+                        <span class="var">\(k_B\)</span>
+                    </span>
+                    </span>
+                </div>
+            </div>
+
+                <ul>
+                <li>Characteristic temperature scale of the solid</li>
+                <li>Energy scale: \(\hbar \omega_E = k_B \theta_E\)</li>
+                <li>Sets when quantum effects become important</li>
+                </ul>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Einstein heat capacity formula</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(C_V\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(3 N k_B\)</span>
+                    <span class="op">\(\Big(\)</span>
+                    <span class="frac">
+                    <span class="frac-num">
+                        <span class="var">\(\theta_E\)</span>
+                    </span>
+                    <span class="frac-den">
+                        <span class="var">\(T\)</span>
+                    </span>
+                    </span>
+                    <span class="op">\(\Big)^2\)</span>
+                    <span class="frac">
+                    <span class="frac-num">
+                        <span class="var">\(e^{\theta_E/T}\)</span>
+                    </span>
+                    <span class="frac-den">
+                        <span class="var">\((e^{\theta_E/T} - 1)^2\)</span>
+                    </span>
+                    </span>
+                </div>
+            </div>
+
+            <ul>
+                <li class="no-num">\(T \gg \theta_E\): classical regime (\(C_V \approx 3 N k_B\))</li>
+                <li class="no-num">\(T \ll \theta_E\): quantum regime (excitations suppressed)</li>
+            </ul>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Limiting Behavior</h2>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ High temperature (\(T \gg \theta_E\))</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(C_V\)</span>
+                    <span class="op">\(\to\)</span>
+                    <span class="var">\(3Nk_B\)</span>
+                </div>
+                <div class="intro-card">
+                    (Dulong-Petit law)
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Low temperature (\(T \ll \theta_E\))</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(C_V\)</span>
+                    <span class="op">\(\sim\)</span>
+                    <span class="var">\(3Nk_B\)</span>
+                    <span class="op">\(\Big(\)</span>
+                    <span class="frac">
+                    <span class="frac-num">
+                        <span class="var">\(\theta_E\)</span>
+                    </span>
+                    <span class="frac-den">
+                        <span class="var">\(T\)</span>
+                    </span>
+                    </span>
+                    <span class="op">\(\Big)^2\)</span>
+                    <span class="var">\(e^{-\theta_E/T}\)</span>
+                </div>
+            </div>
+
+            <ul>
+                <li class="no-num">Exponential suppression</li>
+                <li class="no-num">\(k_B T \ll \hbar \omega_E \implies\) excitations freeze out</li>
+            </ul>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Assessment and Limitation</h2>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ What it gets right:</div>
+            </div>
+
+            <ul>
+                <li class="no-num">\(C_V \to 0\) as \(T \to 0\) (qualitative trend)</li>
+                <li class="no-num">Introduces quantization of lattice vibrations</li>
+            </ul>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ What it gets wrong:</div>
+            </div>
+
+            <ul>
+                <li class="no-num">Incorrect low-temperature dependence</li>
+                <li class="no-num">Predicts \(C_V \sim e^{-\theta_E/T}\)</li>
+                <li class="no-num">Experiments show \(C_V \propto T^3\)</li>
+            </ul>
+
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>From Einstein to Debye: What needs fixing?</h2>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Einstein model assumption:</div>
+                <div class="formula-label">✦ All Modes Identical</div>
+                
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(\omega = \omega_E\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Problem:</div>
+                <ul>
+                    <li class="no-num">Real solids do not have a single frequency</li>
+                    <li class="no-num">Vibrations occur over a <strong>spectrum of frequencies</strong></li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Correct viewpoint:</div>
+                <ul>
+                    <li class="no-num">A solid has \(3N\) normal modes</li>
+                    <li class="no-num">Each mode has its own frequency \(\omega\)</li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Einstein</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="op">\(\displaystyle\sum\)</span>
+                    <span class="op">\(\to\)</span>
+                    <span class="var">\(3N \times (\text{same } \omega)\)</span>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Reality</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="op">\(\displaystyle\sum\)</span>
+                    <span class="op">\(\to\)</span>
+                    <span class="var">\(\displaystyle\sum_{\text{modes}} \omega\)</span>
+                </div>
+            </div>
+
+            <div class="callout note">
+                <div>
+                    <div class="callout-title">Key Idea</div>
+                    Replace single frequency \(\omega_E\) by a <strong>distribution of frequencies</strong>.
+                </div>
+            </div>
+
+            <div class="callout note">
+                <div>
+                    <div class="callout-title">General Result</div>
+                    System has \(3N\) normal modes of vibration. Each mode behaves like a harmonic oscillator.
+                </div>
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Introduction to Debye Approximation</h2>
+            </div>
+
+            <div class="intro-card">
+                Each normal mode behaves like a quantum harmonic oscillator, but now different modes have different frequencies. So instead of summing identical oscillators, we must sum over all modes with different \(\omega\).
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Energy sum over modes</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(E\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="op">\(\displaystyle\sum_{k,s}\)</span>
+                    <span class="frac">
+                    <span class="frac-num">
+                        <span class="var">\(\hbar \omega_{k,s}\)</span>
+                    </span>
+                    <span class="frac-den">
+                        <span class="var">\(e^{\beta \hbar \omega_{k,s}} - 1\)</span>
+                    </span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="intro-card">
+                To make progress, we convert the sum into an integral:
+            </div>
+
+            <div class="formula-card">
+                <div class="formula-label">✦ Integral form</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(E\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="op">\(\displaystyle\int_{0}^{\infty}\)</span>
+                    <span class="var">\(\sigma(\omega)\)</span>
+                    <span class="frac">
+                    <span class="frac-num">
+                        <span class="var">\(\hbar \omega\)</span>
+                    </span>
+                    <span class="frac-den">
+                        <span class="var">\(e^{\beta \hbar \omega} - 1\)</span>
+                    </span>
+                    </span>
+                    <span class="var">\(d\omega\)</span>
+                </div>
+                </div>
+
+            <div class="callout note">
+                <div>
+                    <div class="callout-title">Thus the entire problem reduces to determining \(\sigma(\omega)\).</div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>From Individual Particles, Collective Motion</h2>
+            </div> 
+            
+            <div class="intro-card">
+                We have studied systems of particles that are non-interacting or weakly interacting.
+            </div>
+
+            <div class="intro-card">
+                In real Solids, the fundamental picture is 
+            </div>
+            
+            <ul>
+                <li>Atoms are arranged in lattice</li>
+                <li>They interact strongly with each other</li>
+                <li>Can't be treated as Individual particles</li>
+            </ul>
+
+            <div class="intro-card">
+                How do we apply statistics to strongly interacting particle systems?
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Small Oscillations and Lattice Vibrations</h2>
+            </div> 
+
+            <div class="intro-card">
+                Consider a solid at low temperature where each atom oscillates about its equilibrium positions.
+            </div>
+
+            <div class="intro-card">
+                Let \(r_i\) be the equilibrium positionof an \(i^{\text{th}}\) atom and \(\overline{\xi}_i\) be the displacement.
+            </div>
+
+            Potential Energy
+            \[
+                V = V_0 + \frac{1}{2}\displaystyle\sum_{i, j} A_{i,j} \xi_i \xi_j
+            \]
+
+            where 
+            \[
+                \frac{1}{2}\displaystyle\sum_{i, j} A_{i,j} \xi_i \xi_j \text{ is Interaction Potential}
+            \]
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Physical Model and Quantum Input</h2>
+            </div> 
+
+            <div class="intro-card">
+                Physical Picture:
+            </div>
+            
+            <ul>
+                <li>Atoms in a crystal oscillate about equilibrium</li>
+                <li>Each atom, independent quantum harmonic oscillator</li>
+                <li>All atoms have frequency \(\omega_E\)</li>
+            </ul>
+
+            Total System
+            \[
+                Z = (Z_1)^{3N}
+            \]
+
+            \[
+                E = 3N\left(\frac{\hbar \omega_E}{2} +  \right)
+            \]
+
+            Einstein Temperature
+
+            \[
+                \theta_E = \frac{\hbar \omega_E}{k_B}
+            \]
+
+            Characteristic temperature scale of solid
+            Energy scale: \(\hbar \omega_E = k_B \theta_E\)
+
+            Heat Capacity
+            \[
+                C_V = 3N k_B \left(\frac{\theta_E}{T}\right)^2 \frac{e^{\theta_E/T}}{(e^{\theta_E/T} - 1)^2}
+            \]
+
+            T >> \theta_E: classical regime
+            Dulong-Petit Law
+            \[
+                C_V \rightarrow 3Nk_B
+            \]
+            
+            T << \theta_E: quantum regime 
+            \[
+                C_v \sim 3Nk_B \left(\frac{\theta_E}{T}\right)^2 e^{-\theta_E / T}
+            \]
+
+             <div class="intro-card">
+                Assessment and Limitation
+                What it gets right:
+
+                What it gets wrongs
+            </div>
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>From Einstein to Debye: What needs fixing?</h2>
+            </div> 
+
+            Einstein Model Assumption
+            All modes indentical
+            \[
+                \omega = \omega_E
+            \]
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Debye Approximation</h2>
+            </div> 
+
+            \[
+                E = \displaystyle\sum_{k,s}\frac{h \omega_{k,s}}{e^{\beta \hbar \omega_{k,s}} - 1}
+            \]
+
+            \[
+                E = \displaystyle\int_0^{\infty} 
+            \]
+
+            <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Why an approximation is necessary</h2>
+            </div> 
+
+             <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Physical Picture of low-frequency modes</h2>
+            </div> 
+
+             <div class="section-head">
+                <div class="section-head-number"></div>
+                <h2>Counting Modes: deriving \(\sigma(\omega)\)</h2>
+            </div> 
 
             <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/topic.js"></script>
             <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/navigation.js"></script>

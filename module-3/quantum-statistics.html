@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Quantum Statistics · Thermodynamics and Statistical Physics For Nanosystems · Nano Library</title>
+    <title>Quantum Statistic · Thermodynamics and Statistical Physics For Nanosystems · Nano Library</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Nunito:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
@@ -33,7 +33,7 @@
         <span class="button-label">next</span>
     </a>
 
-    <main data-topic="15" data-list="../index.html">
+    <main data-topic="14" data-list="../index.html">
 
         <div class="page-header">
             <div class="topic-chip"></div>
@@ -67,10 +67,107 @@
 
 		<div class="content-body">
 
-            <div class="intro-card">
-                ✨ 
+            <div class="table-wrap">
+                <table>
+                <thead>
+                    <tr>
+                    <th>Aspect</th>
+                    <th>Bosons</th>
+                    <th>Fermions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Spin</b></td>
+                        <td>
+                            Particles with integer spin (\(0, 1, 2, \ldots\))
+                        </td>
+                        <td>
+                            Particles with half-integer spin (\(\frac{1}{2}, \frac{3}{2}, \ldots\))
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Quantum States</b></td>
+                        <td>
+                            The total wavefunction is symmetric under particle exchange: 
+                            \[ 
+                                \phi(r_1, r_2) = +\phi(r_2, r_1)
+                            \]
+                        </td>
+                        <td>
+                            The total wavefunction is antisymmetric under particle exchange: 
+                            \[ 
+                                \phi(r_1, r_2) = -\phi(r_2, r_1)
+                            \]
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Occupation number (n)</b></td>
+                        <td>
+                            Multiple identical bosons may occupy the same single-particle quantum state without restriction.
+                            \[
+                                n_r = 0, 1, 2, \ldots
+                            \]
+                        </td>
+                        <td>
+                            Pauli exclusion principle applies: at most one fermion may occupy a given single-particle quantum state.
+                            \[
+                                n_r = 0, 1
+                            \]
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Examples</b></td>
+                        <td>Photons (quanta of light), phonons (lattice vibrations), plasmons (collective electron oscillations).</td>
+                        <td>Conduction electrons in metals at low temperatures, liquid \(^3\)He, and degenerate fermion systems such as neutron stars and white dwarfs.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Total Energy (E)</b></td>
+                        <td>
+                            Sum of energies over all occupied single-particle states:
+                            \[
+                                E = \displaystyle\sum_r n_r E_r
+                            \]
+                        </td>
+                        <td>
+                            Sum of energies over all occupied single-particle states (where \(n_r \le 1\)):
+                            \[
+                                E = \displaystyle\sum_r n_r E_r
+                            \]
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Statistics</b></td>
+                        <td>
+                            Follows <b>Bose-Einstein statistics</b>. Particles are indistinguishable and can share the same microstate.
+                        </td>
+                        <td>
+                            Follows <b>Fermi-Dirac statistics</b>. Particles are indistinguishable and obey the Pauli exclusion principle.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Grand Partition Function (Z)</b></td>
+                        <td>
+                            \[
+                                Z_{\text{BE}} = \displaystyle\prod_r \frac{1}{1 - e^{-\beta \left(E_r - \mu\right)}}
+                            \]
+                        </td>
+                        <td>
+                            \[
+                                Z_{\text{FD}} = \displaystyle\prod_r \left(1 + e^{-\beta \left(E_r - \mu\right)}\right)
+                            \]
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
             </div>
-            
+
+            <div class="intro-card">
+                Both canonical and grand-canonical partition function forms can be used, depending on the exchange.
+            </div>
+
 	        <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/topic.js"></script>
             <script src="https://nano-library.github.io/dynamic-behavior-and-interactivity/navigation.js"></script>
         </div>

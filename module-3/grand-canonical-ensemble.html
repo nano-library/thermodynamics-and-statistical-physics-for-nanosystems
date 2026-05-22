@@ -90,7 +90,7 @@
                     <span class="var">\(E\)</span>
                     <span class="op">\(+\)</span>
                     <span class="var">\(E^{'}\)</span>
-                    <span class="op">\(=)</span>
+                    <span class="op">\(=\)</span>
                     <span class="var">\(E^{*}\)</span>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                     <span class="var">\(N\)</span>
                     <span class="op">\(+\)</span>
                     <span class="var">\(N^{'}\)</span>
-                    <span class="op">\(=)</span>
+                    <span class="op">\(=\)</span>
                     <span class="var">\(N^{*}\)</span>
                 </div>
             </div>
@@ -159,29 +159,121 @@
                 Expanding the logarithm of \(\Omega'\) to first order and using the definitions \(\beta = 1/(kT)\) and \(\alpha = -\mu/(kT)\), we obtain:
             </div>
 
-            \[
-                \ln(\Omega^{'} (E^{'}, N^{'})) = \ln(\Omega^{'}(E^{*} - E_r, N^{*} - N_r))
-            \]
+            <div class="formula-card">
+                <div class="formula-label">Reservoir multiplicity expansion</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="op">\(\ln\)</span>
 
-            \[
-                \ln(\Omega^{'}(E^{*}, N^{*})) \approx \ln(\Omega^{'}(E^{*}, N^{*})) - \left(\frac{\partial \ln \Omega^{'}}{\partial E^{'}}\right) E_r - \left(\frac{\partial \ln \Omega^{'}}{\partial N^{'}}\right)N_r
-            \]
+                    <span class="op">\(\Big(\)</span>
+                    <span class="var">\(\Omega^{'}(E^{'}, N^{'})\)</span>
+                    <span class="op">\(\Big)\)</span>
 
-            \[
-                \Omega^{'} \approx e^{\ln(\Omega^{'} (E^{*}, N^{*}))} \times e^{- \left(\frac{\partial \ln \Omega^{'}}{\partial E^{'}}\right) E_r - \left(\frac{\partial \ln \Omega^{'}}{\partial N^{'}}\right)N_r}
-            \]
+                    <span class="op">\(=\)</span>
 
-            \[
-                \Omega^{'} (E^{'}, N^{'}) \approx \Omega^{'}(E^{*}, N^{*}) \times e^{-\beta E_r - \alpha N_r} 
-            \]
+                    <span class="op">\(\ln\)</span>
 
-            \[
-                \Omega^{'} (E^{'}, N^{'}) = \text{ constant } \cdot e^{-\beta (E_r - \mu N_r)} 
-            \]
+                    <span class="op">\(\Big(\)</span>
+                    <span class="var">\(\Omega^{'}(E^{*} - E_r, N^{*} - N_r)\)</span>
+                    <span class="op">\(\Big)\)</span>
+                </div>
+                </div>
 
-            \[
-                \text{ where } \alpha = -\frac{\mu}{kT}
-            \]
+                <div class="formula-card">
+                <div class="formula-label">First-order expansion</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="op">\(\ln\)</span>
+                    <span class="var">\(\Omega^{'}(E^{*}, N^{*})\)</span>
+                    <span class="op">\(\approx\)</span>
+                    <span class="op">\(\ln\)</span>
+                    <span class="var">\(\Omega^{'}(E^{*}, N^{*})\)</span>
+                    <span class="op">\(-\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="op">\(\partial\)</span>
+                            <span class="op">\(\ln\)</span>
+                            <span class="var">\(\Omega^{'}\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="op">\(\partial\)</span>
+                            <span class="var">\(E^{'}\)</span>
+                        </span>
+                    </span>
+                    <span class="var">\(E_r\)</span>
+                    <span class="op">\(-\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="op">\(\partial\)</span>
+                            <span class="op">\(\ln\)</span>
+                            <span class="var">\(\Omega^{'}\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="op">\(\partial\)</span>
+                            <span class="var">\(N^{'}\)</span>
+                        </span>
+                    </span>
+                    <span class="var">\(N_r\)</span>
+                </div>
+                </div>
+
+                <div class="formula-card">
+                <div class="formula-label">Exponentiated form</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(\Omega^{'}\)</span>
+                    <span class="op">\(\approx\)</span>
+
+                    <span class="var">\(e^{\ln(\Omega^{'}(E^{*}, N^{*}))}\)</span>
+
+                    <span class="op">\(\times\)</span>
+
+                    <span class="var">\(e^{-\Big(\frac{\partial \ln \Omega^{'}}{\partial E^{'}}\Big)E_r - \Big(\frac{\partial \ln \Omega^{'}}{\partial N^{'}}\Big)N_r}\)</span>
+                </div>
+                </div>
+
+                <div class="formula-card">
+                <div class="formula-label">Thermodynamic form</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(\Omega^{'}(E^{'}, N^{'})\)</span>
+                    <span class="op">\(\approx\)</span>
+                    <span class="var">\(\Omega^{'}(E^{*}, N^{*})\)</span>
+                    <span class="op">\(\times\)</span>
+                    <span class="var">\(e^{-\beta E_r - \alpha N_r}\)</span>
+                </div>
+                </div>
+
+                <div class="formula-card">
+                <div class="formula-label">Grand canonical weight</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(\Omega^{'}(E^{'}, N^{'})\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(\text{constant}\)</span>
+                    <span class="op">\(\cdot\)</span>
+                    <span class="var">\(e^{-\beta(E_r - \mu N_r)}\)</span>
+                </div>
+                </div>
+
+                <div class="formula-card">
+                <div class="formula-label">Definition of \(\alpha\)</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(\alpha\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="op">\(-\)</span>
+
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(\mu\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(kT\)</span>
+                        </span>
+                    </span>
+                </div>
+                </div>
 
             <div class="formula-card">
                 <div class="formula-label">Exponential form</div>
@@ -241,25 +333,72 @@
                 </div>
             </div>
 
-            From Thermodynamics
-            \[  
-                dU = TdS - PdV + \mu dN
-            \]
+           <div class="formula-card">
+                <div class="formula-label">Fundamental thermodynamic relation</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(dU\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="var">\(T\)</span>
+                    <span class="var">\(dS\)</span>
+                    <span class="op">\(-\)</span>
+                    <span class="var">\(P\)</span>
+                    <span class="var">\(dV\)</span>
+                    <span class="op">\(+\)</span>
+                    <span class="var">\(\mu\)</span>
+                    <span class="var">\(dN\)</span>
+                </div>
+            </div>
 
-            \[
-                \mu = -\left(\frac{dU}{dN}\right)_{S, V}
-            \]
+            <div class="formula-card">
+                <div class="formula-label">Chemical potential</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(\mu\)</span>
+                    <span class="op">\(= - \Big(\)</span>
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(dU\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(dN\)</span>
+                        </span>
+                    </span>
+                    <span class="op">\(\Big)_{{\color{#6AAEE0}{S}}, {\color{#6AAEE0}{V}} }\)</span>
+                </div>
+            </div>
 
-            Partition function
-            \[
-                Z = \displaystyle\sum_r e^{-\beta (E_r - \mu N_r)}
-            \]
+            <div class="formula-card">
+                <div class="formula-label">✦ Grand canonical partition function</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(Z\)</span>
+                    <span class="op">\(=\)</span>
+                    <span class="op">\(\displaystyle\sum\)</span>
+                    <span class="var">\(r\)</span>
+                    <span class="var">\(e^{-\beta(E_r - \mu N_r)}\)</span>
+                </div>
+            </div>
 
-            \[
-                P_r = \frac{1}{Z} e^{-beta (E_r - \mu N_r)}
-            \]
-        
+            <div class="formula-card">
+                <div class="formula-label">✦ Probability of microstate</div>
+                <div class="formula-number">✦</div>
+                <div class="formula">
+                    <span class="var">\(P_r\)</span>
+                    <span class="op">\(=\)</span>
 
+                    <span class="frac">
+                        <span class="frac-num">
+                            <span class="var">\(1\)</span>
+                        </span>
+                        <span class="frac-den">
+                            <span class="var">\(Z\)</span>
+                        </span>
+                    </span>
+                    <span class="var">\(e^{-\beta(E_r - \mu N_r)}\)</span>
+                </div>
+            </div>
+            
             <div class="intro-card">
                 The grand canonical partition function is the normalization factor, summing over all possible states with different energies and particle numbers:
             </div>
